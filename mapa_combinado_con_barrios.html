@@ -1,0 +1,2351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_669461fa187cc04dc5cb13d3480c4942 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_669461fa187cc04dc5cb13d3480c4942" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_669461fa187cc04dc5cb13d3480c4942 = L.map(
+                "map_669461fa187cc04dc5cb13d3480c4942",
+                {
+                    center: [-32.94682, -60.63932],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_58d40305da3f805ef748ecb17c22a7e5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_58d40305da3f805ef748ecb17c22a7e5.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_d8a3140ed82ac88023d9e7500d837407_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_d8a3140ed82ac88023d9e7500d837407_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d8a3140ed82ac88023d9e7500d837407 = L.geoJson(null, {
+                onEachFeature: geo_json_d8a3140ed82ac88023d9e7500d837407_onEachFeature,
+            
+                style: geo_json_d8a3140ed82ac88023d9e7500d837407_styler,
+        });
+
+        function geo_json_d8a3140ed82ac88023d9e7500d837407_add (data) {
+            geo_json_d8a3140ed82ac88023d9e7500d837407
+                .addData(data);
+        }
+            geo_json_d8a3140ed82ac88023d9e7500d837407_add({"features": [{"geometry": {"coordinates": [[[-60.689926, -32.964951], [-60.689733, -32.964122], [-60.68866, -32.964312], [-60.688664, -32.964393], [-60.688647, -32.964858], [-60.688644, -32.96492], [-60.689926, -32.964951]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_b3d0352b9c5de7ac5a9de62b26664650 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b588535df25267e27383377795f01bf3 = $(`<div id="html_b588535df25267e27383377795f01bf3" style="width: 100.0%; height: 100.0%;">Barrio: VICTORIA WALSH</div>`)[0];
+                popup_b3d0352b9c5de7ac5a9de62b26664650.setContent(html_b588535df25267e27383377795f01bf3);
+            
+        
+
+        geo_json_d8a3140ed82ac88023d9e7500d837407.bindPopup(popup_b3d0352b9c5de7ac5a9de62b26664650)
+        ;
+
+        
+    
+    
+            geo_json_d8a3140ed82ac88023d9e7500d837407.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_d78a746851ba8b9f6efcd02f6c8a4af0_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_d78a746851ba8b9f6efcd02f6c8a4af0_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d78a746851ba8b9f6efcd02f6c8a4af0 = L.geoJson(null, {
+                onEachFeature: geo_json_d78a746851ba8b9f6efcd02f6c8a4af0_onEachFeature,
+            
+                style: geo_json_d78a746851ba8b9f6efcd02f6c8a4af0_styler,
+        });
+
+        function geo_json_d78a746851ba8b9f6efcd02f6c8a4af0_add (data) {
+            geo_json_d78a746851ba8b9f6efcd02f6c8a4af0
+                .addData(data);
+        }
+            geo_json_d78a746851ba8b9f6efcd02f6c8a4af0_add({"features": [{"geometry": {"coordinates": [[[-60.664275, -32.996694], [-60.66418, -32.99669], [-60.66369, -32.996679], [-60.66353, -32.996674], [-60.663225, -32.996666], [-60.663235, -32.996421], [-60.663237, -32.996316], [-60.662232, -32.996287], [-60.66219, -32.997515], [-60.664231, -32.997578], [-60.664236, -32.997473], [-60.664275, -32.996694]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_631f59489f741bcbcf6fce6927a59831 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f2c5622f337c031274586ddae6f3e6d5 = $(`<div id="html_f2c5622f337c031274586ddae6f3e6d5" style="width: 100.0%; height: 100.0%;">Barrio: 14 DE OCTUBRE</div>`)[0];
+                popup_631f59489f741bcbcf6fce6927a59831.setContent(html_f2c5622f337c031274586ddae6f3e6d5);
+            
+        
+
+        geo_json_d78a746851ba8b9f6efcd02f6c8a4af0.bindPopup(popup_631f59489f741bcbcf6fce6927a59831)
+        ;
+
+        
+    
+    
+            geo_json_d78a746851ba8b9f6efcd02f6c8a4af0.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_34f709ee4cd7c2efe212f078813a24a2_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_34f709ee4cd7c2efe212f078813a24a2_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_34f709ee4cd7c2efe212f078813a24a2 = L.geoJson(null, {
+                onEachFeature: geo_json_34f709ee4cd7c2efe212f078813a24a2_onEachFeature,
+            
+                style: geo_json_34f709ee4cd7c2efe212f078813a24a2_styler,
+        });
+
+        function geo_json_34f709ee4cd7c2efe212f078813a24a2_add (data) {
+            geo_json_34f709ee4cd7c2efe212f078813a24a2
+                .addData(data);
+        }
+            geo_json_34f709ee4cd7c2efe212f078813a24a2_add({"features": [{"geometry": {"coordinates": [[[-60.725558, -32.893033], [-60.722884, -32.89296], [-60.721885, -32.893784], [-60.721832, -32.894015], [-60.721873, -32.89448], [-60.722973, -32.894512], [-60.7255, -32.894593], [-60.725558, -32.893033]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_9a8e48a33fd83696650ba835632f1c27 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2533c8d9090592e37a698e42d73037e4 = $(`<div id="html_2533c8d9090592e37a698e42d73037e4" style="width: 100.0%; height: 100.0%;">Barrio: DOCENTE HERMANAS COSSETTINI</div>`)[0];
+                popup_9a8e48a33fd83696650ba835632f1c27.setContent(html_2533c8d9090592e37a698e42d73037e4);
+            
+        
+
+        geo_json_34f709ee4cd7c2efe212f078813a24a2.bindPopup(popup_9a8e48a33fd83696650ba835632f1c27)
+        ;
+
+        
+    
+    
+            geo_json_34f709ee4cd7c2efe212f078813a24a2.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_09cdab8e2ec154e757f51eaf149b8114_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_09cdab8e2ec154e757f51eaf149b8114_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_09cdab8e2ec154e757f51eaf149b8114 = L.geoJson(null, {
+                onEachFeature: geo_json_09cdab8e2ec154e757f51eaf149b8114_onEachFeature,
+            
+                style: geo_json_09cdab8e2ec154e757f51eaf149b8114_styler,
+        });
+
+        function geo_json_09cdab8e2ec154e757f51eaf149b8114_add (data) {
+            geo_json_09cdab8e2ec154e757f51eaf149b8114
+                .addData(data);
+        }
+            geo_json_09cdab8e2ec154e757f51eaf149b8114_add({"features": [{"geometry": {"coordinates": [[[-60.667683, -32.968049], [-60.667036, -32.965301], [-60.664515, -32.965742], [-60.665228, -32.968497], [-60.667683, -32.968049]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_62b9f8f32605d0f27b4b3270ae23e928 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b58f9d800789c48c4cee25adfaafbf5a = $(`<div id="html_b58f9d800789c48c4cee25adfaafbf5a" style="width: 100.0%; height: 100.0%;">Barrio: LATINOAMERICA</div>`)[0];
+                popup_62b9f8f32605d0f27b4b3270ae23e928.setContent(html_b58f9d800789c48c4cee25adfaafbf5a);
+            
+        
+
+        geo_json_09cdab8e2ec154e757f51eaf149b8114.bindPopup(popup_62b9f8f32605d0f27b4b3270ae23e928)
+        ;
+
+        
+    
+    
+            geo_json_09cdab8e2ec154e757f51eaf149b8114.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_58574030aca6e3c837a2334bab639fbf_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_58574030aca6e3c837a2334bab639fbf_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_58574030aca6e3c837a2334bab639fbf = L.geoJson(null, {
+                onEachFeature: geo_json_58574030aca6e3c837a2334bab639fbf_onEachFeature,
+            
+                style: geo_json_58574030aca6e3c837a2334bab639fbf_styler,
+        });
+
+        function geo_json_58574030aca6e3c837a2334bab639fbf_add (data) {
+            geo_json_58574030aca6e3c837a2334bab639fbf
+                .addData(data);
+        }
+            geo_json_58574030aca6e3c837a2334bab639fbf_add({"features": [{"geometry": {"coordinates": [[[-60.692341, -32.959044], [-60.692333, -32.958778], [-60.691129, -32.958947], [-60.691038, -32.959077], [-60.68965, -32.959332], [-60.688579, -32.959526], [-60.689733, -32.964122], [-60.689926, -32.964951], [-60.691327, -32.970459], [-60.691469, -32.970465], [-60.6919, -32.969411], [-60.692008, -32.968943], [-60.692097, -32.966437], [-60.6921, -32.966382], [-60.692225, -32.962667], [-60.692341, -32.959044]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_710bf62b078ce7a0be5b9bcbe0e7458f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7f955f362583a6ea45fabb540a1c97ae = $(`<div id="html_7f955f362583a6ea45fabb540a1c97ae" style="width: 100.0%; height: 100.0%;">Barrio: BELLA VISTA</div>`)[0];
+                popup_710bf62b078ce7a0be5b9bcbe0e7458f.setContent(html_7f955f362583a6ea45fabb540a1c97ae);
+            
+        
+
+        geo_json_58574030aca6e3c837a2334bab639fbf.bindPopup(popup_710bf62b078ce7a0be5b9bcbe0e7458f)
+        ;
+
+        
+    
+    
+            geo_json_58574030aca6e3c837a2334bab639fbf.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_a81defa64d1db953586a472279789a62_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_a81defa64d1db953586a472279789a62_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a81defa64d1db953586a472279789a62 = L.geoJson(null, {
+                onEachFeature: geo_json_a81defa64d1db953586a472279789a62_onEachFeature,
+            
+                style: geo_json_a81defa64d1db953586a472279789a62_styler,
+        });
+
+        function geo_json_a81defa64d1db953586a472279789a62_add (data) {
+            geo_json_a81defa64d1db953586a472279789a62
+                .addData(data);
+        }
+            geo_json_a81defa64d1db953586a472279789a62_add({"features": [{"geometry": {"coordinates": [[[-60.661514, -32.976365], [-60.658634, -32.964891], [-60.655905, -32.96538], [-60.656292, -32.966937], [-60.657838, -32.973058], [-60.658736, -32.976617], [-60.658797, -32.976849], [-60.661514, -32.976365]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_6a29e83bc194c12bd3c9eeb08c5fbf81 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6071aee06ce02866c37e07b910c9660f = $(`<div id="html_6071aee06ce02866c37e07b910c9660f" style="width: 100.0%; height: 100.0%;">Barrio: PARQUE CASADO</div>`)[0];
+                popup_6a29e83bc194c12bd3c9eeb08c5fbf81.setContent(html_6071aee06ce02866c37e07b910c9660f);
+            
+        
+
+        geo_json_a81defa64d1db953586a472279789a62.bindPopup(popup_6a29e83bc194c12bd3c9eeb08c5fbf81)
+        ;
+
+        
+    
+    
+            geo_json_a81defa64d1db953586a472279789a62.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_b181fe2450329ec139b62d3d2cae3df2_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_b181fe2450329ec139b62d3d2cae3df2_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b181fe2450329ec139b62d3d2cae3df2 = L.geoJson(null, {
+                onEachFeature: geo_json_b181fe2450329ec139b62d3d2cae3df2_onEachFeature,
+            
+                style: geo_json_b181fe2450329ec139b62d3d2cae3df2_styler,
+        });
+
+        function geo_json_b181fe2450329ec139b62d3d2cae3df2_add (data) {
+            geo_json_b181fe2450329ec139b62d3d2cae3df2
+                .addData(data);
+        }
+            geo_json_b181fe2450329ec139b62d3d2cae3df2_add({"features": [{"geometry": {"coordinates": [[[-60.71999, -32.886786], [-60.719474, -32.88662], [-60.71948, -32.886593], [-60.715194, -32.886427], [-60.714889, -32.886106], [-60.714165, -32.886089], [-60.712681, -32.886093], [-60.71155, -32.886054], [-60.710017, -32.885987], [-60.709644, -32.886747], [-60.709, -32.888014], [-60.708934, -32.88814], [-60.708872, -32.888266], [-60.708433, -32.889114], [-60.708152, -32.889549], [-60.70825, -32.889552], [-60.709834, -32.889606], [-60.711921, -32.889676], [-60.712576, -32.889687], [-60.712724, -32.88952], [-60.712793, -32.889468], [-60.712839, -32.889447], [-60.712955, -32.889435], [-60.713041, -32.889446], [-60.71312, -32.88948], [-60.713312, -32.889708], [-60.713712, -32.889715], [-60.71595, -32.889761], [-60.716719, -32.889819], [-60.718865, -32.892353], [-60.719046, -32.891688], [-60.719052, -32.89166], [-60.719192, -32.891053], [-60.719346, -32.890281], [-60.719358, -32.890155], [-60.719411, -32.889887], [-60.719621, -32.888813], [-60.71979, -32.887913], [-60.71981, -32.887726], [-60.71999, -32.886786]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_367a5e4d5179e65710aca8cbc7fbe36c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_09b057c50c816d6e8a0c8884cb891d20 = $(`<div id="html_09b057c50c816d6e8a0c8884cb891d20" style="width: 100.0%; height: 100.0%;">Barrio: JOSE IGNACIO RUCCI</div>`)[0];
+                popup_367a5e4d5179e65710aca8cbc7fbe36c.setContent(html_09b057c50c816d6e8a0c8884cb891d20);
+            
+        
+
+        geo_json_b181fe2450329ec139b62d3d2cae3df2.bindPopup(popup_367a5e4d5179e65710aca8cbc7fbe36c)
+        ;
+
+        
+    
+    
+            geo_json_b181fe2450329ec139b62d3d2cae3df2.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_14bd2978ba399db7095f86cc615328df_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_14bd2978ba399db7095f86cc615328df_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_14bd2978ba399db7095f86cc615328df = L.geoJson(null, {
+                onEachFeature: geo_json_14bd2978ba399db7095f86cc615328df_onEachFeature,
+            
+                style: geo_json_14bd2978ba399db7095f86cc615328df_styler,
+        });
+
+        function geo_json_14bd2978ba399db7095f86cc615328df_add (data) {
+            geo_json_14bd2978ba399db7095f86cc615328df
+                .addData(data);
+        }
+            geo_json_14bd2978ba399db7095f86cc615328df_add({"features": [{"geometry": {"coordinates": [[[-60.66469, -33.009345], [-60.65717, -33.009105], [-60.656784, -33.016017], [-60.661384, -33.015236], [-60.664519, -33.014346], [-60.66469, -33.009345]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_77ff17fdcf4ac37ec3105df5ca3a3a84 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d87e9abcc8702d1d0c849400de8e39e0 = $(`<div id="html_d87e9abcc8702d1d0c849400de8e39e0" style="width: 100.0%; height: 100.0%;">Barrio: 17 DE AGOSTO</div>`)[0];
+                popup_77ff17fdcf4ac37ec3105df5ca3a3a84.setContent(html_d87e9abcc8702d1d0c849400de8e39e0);
+            
+        
+
+        geo_json_14bd2978ba399db7095f86cc615328df.bindPopup(popup_77ff17fdcf4ac37ec3105df5ca3a3a84)
+        ;
+
+        
+    
+    
+            geo_json_14bd2978ba399db7095f86cc615328df.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_b9c4a389ac5ae8cbdca9d5915f457319_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_b9c4a389ac5ae8cbdca9d5915f457319_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b9c4a389ac5ae8cbdca9d5915f457319 = L.geoJson(null, {
+                onEachFeature: geo_json_b9c4a389ac5ae8cbdca9d5915f457319_onEachFeature,
+            
+                style: geo_json_b9c4a389ac5ae8cbdca9d5915f457319_styler,
+        });
+
+        function geo_json_b9c4a389ac5ae8cbdca9d5915f457319_add (data) {
+            geo_json_b9c4a389ac5ae8cbdca9d5915f457319
+                .addData(data);
+        }
+            geo_json_b9c4a389ac5ae8cbdca9d5915f457319_add({"features": [{"geometry": {"coordinates": [[[-60.624687, -33.00023], [-60.624654, -33.000073], [-60.624606, -32.999792], [-60.624445, -32.99958], [-60.624303, -32.999489], [-60.624123, -32.999189], [-60.623493, -32.999235], [-60.623201, -32.999229], [-60.62289, -32.999149], [-60.622693, -32.999038], [-60.622472, -32.998827], [-60.622249, -32.997893], [-60.621397, -32.997752], [-60.621477, -32.99731], [-60.621203, -32.996853], [-60.620607, -32.997066], [-60.620496, -32.997035], [-60.620041, -32.996746], [-60.619839, -32.996644], [-60.620093, -32.996329], [-60.620214, -32.996144], [-60.619286, -32.995693], [-60.618722, -32.995396], [-60.61728, -32.994866], [-60.616733, -32.995994], [-60.616334, -32.996335], [-60.615653, -32.996389], [-60.615326, -32.996744], [-60.615313, -32.997396], [-60.61383, -32.998077], [-60.61388, -32.998968], [-60.615138, -33.000175], [-60.61987, -33.002453], [-60.619903, -33.002154], [-60.619982, -33.002137], [-60.62003, -33.002175], [-60.620203, -33.0021], [-60.620351, -33.002103], [-60.620628, -33.001985], [-60.620693, -33.002088], [-60.622683, -33.002153], [-60.624322, -33.002205], [-60.624633, -33.002216], [-60.62411, -33.001331], [-60.624571, -33.000609], [-60.624687, -33.00023]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_20c007d9fc7776fe6cbc89bb0050ba60 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f08313ebb76a8171fcab7c6244b6e442 = $(`<div id="html_f08313ebb76a8171fcab7c6244b6e442" style="width: 100.0%; height: 100.0%;">Barrio: SALADILLO SUR</div>`)[0];
+                popup_20c007d9fc7776fe6cbc89bb0050ba60.setContent(html_f08313ebb76a8171fcab7c6244b6e442);
+            
+        
+
+        geo_json_b9c4a389ac5ae8cbdca9d5915f457319.bindPopup(popup_20c007d9fc7776fe6cbc89bb0050ba60)
+        ;
+
+        
+    
+    
+            geo_json_b9c4a389ac5ae8cbdca9d5915f457319.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_3c977b316c1c42fe2d90fb6a4d4a49d5_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_3c977b316c1c42fe2d90fb6a4d4a49d5_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_3c977b316c1c42fe2d90fb6a4d4a49d5 = L.geoJson(null, {
+                onEachFeature: geo_json_3c977b316c1c42fe2d90fb6a4d4a49d5_onEachFeature,
+            
+                style: geo_json_3c977b316c1c42fe2d90fb6a4d4a49d5_styler,
+        });
+
+        function geo_json_3c977b316c1c42fe2d90fb6a4d4a49d5_add (data) {
+            geo_json_3c977b316c1c42fe2d90fb6a4d4a49d5
+                .addData(data);
+        }
+            geo_json_3c977b316c1c42fe2d90fb6a4d4a49d5_add({"features": [{"geometry": {"coordinates": [[[-60.719858, -32.893537], [-60.719248, -32.892824], [-60.718865, -32.892353], [-60.716719, -32.889819], [-60.71595, -32.889761], [-60.713712, -32.889715], [-60.713312, -32.889708], [-60.71312, -32.88948], [-60.713041, -32.889446], [-60.712955, -32.889435], [-60.712839, -32.889447], [-60.712793, -32.889468], [-60.712724, -32.88952], [-60.712576, -32.889687], [-60.711921, -32.889676], [-60.709834, -32.889606], [-60.70825, -32.889552], [-60.708152, -32.889549], [-60.707399, -32.890654], [-60.706607, -32.891813], [-60.70646, -32.892028], [-60.706258, -32.892324], [-60.705851, -32.892905], [-60.705304, -32.893678], [-60.70523, -32.893787], [-60.706307, -32.893818], [-60.707988, -32.893873], [-60.708025, -32.893628], [-60.713197, -32.893794], [-60.718268, -32.893953], [-60.71932, -32.89372], [-60.719858, -32.893537]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_a98ccb5d843e4d7b400c7a6205a58408 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_667150e810112e9eb319e71fce68f825 = $(`<div id="html_667150e810112e9eb319e71fce68f825" style="width: 100.0%; height: 100.0%;">Barrio: PARQUE FIELD</div>`)[0];
+                popup_a98ccb5d843e4d7b400c7a6205a58408.setContent(html_667150e810112e9eb319e71fce68f825);
+            
+        
+
+        geo_json_3c977b316c1c42fe2d90fb6a4d4a49d5.bindPopup(popup_a98ccb5d843e4d7b400c7a6205a58408)
+        ;
+
+        
+    
+    
+            geo_json_3c977b316c1c42fe2d90fb6a4d4a49d5.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_47eb4f793b9834447c3e8f3997608e51_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_47eb4f793b9834447c3e8f3997608e51_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_47eb4f793b9834447c3e8f3997608e51 = L.geoJson(null, {
+                onEachFeature: geo_json_47eb4f793b9834447c3e8f3997608e51_onEachFeature,
+            
+                style: geo_json_47eb4f793b9834447c3e8f3997608e51_styler,
+        });
+
+        function geo_json_47eb4f793b9834447c3e8f3997608e51_add (data) {
+            geo_json_47eb4f793b9834447c3e8f3997608e51
+                .addData(data);
+        }
+            geo_json_47eb4f793b9834447c3e8f3997608e51_add({"features": [{"geometry": {"coordinates": [[[-60.73151, -32.878004], [-60.724151, -32.877693], [-60.721808, -32.87759], [-60.720721, -32.883243], [-60.728239, -32.88359], [-60.728387, -32.880798], [-60.731334, -32.880932], [-60.73151, -32.878004]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_ec4850f96d47169aabaac3c2beffee3f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ccbef678dffc2ec6bb895aad544af2e8 = $(`<div id="html_ccbef678dffc2ec6bb895aad544af2e8" style="width: 100.0%; height: 100.0%;">Barrio: ROBERTO FONTANARROSA</div>`)[0];
+                popup_ec4850f96d47169aabaac3c2beffee3f.setContent(html_ccbef678dffc2ec6bb895aad544af2e8);
+            
+        
+
+        geo_json_47eb4f793b9834447c3e8f3997608e51.bindPopup(popup_ec4850f96d47169aabaac3c2beffee3f)
+        ;
+
+        
+    
+    
+            geo_json_47eb4f793b9834447c3e8f3997608e51.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_01919c8098038b78519b15437ea225e6_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_01919c8098038b78519b15437ea225e6_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_01919c8098038b78519b15437ea225e6 = L.geoJson(null, {
+                onEachFeature: geo_json_01919c8098038b78519b15437ea225e6_onEachFeature,
+            
+                style: geo_json_01919c8098038b78519b15437ea225e6_styler,
+        });
+
+        function geo_json_01919c8098038b78519b15437ea225e6_add (data) {
+            geo_json_01919c8098038b78519b15437ea225e6
+                .addData(data);
+        }
+            geo_json_01919c8098038b78519b15437ea225e6_add({"features": [{"geometry": {"coordinates": [[[-60.758089, -32.944805], [-60.756748, -32.944772], [-60.756392, -32.944763], [-60.756399, -32.944599], [-60.756414, -32.943928], [-60.756443, -32.942775], [-60.756479, -32.941397], [-60.75649, -32.940758], [-60.755019, -32.940732], [-60.75244, -32.940673], [-60.752457, -32.94073], [-60.752074, -32.940721], [-60.750093, -32.94068], [-60.750089, -32.940833], [-60.750047, -32.94224], [-60.750022, -32.943002], [-60.750003, -32.943616], [-60.749971, -32.944615], [-60.749572, -32.944605], [-60.749569, -32.944775], [-60.749529, -32.94598], [-60.749501, -32.946955], [-60.749459, -32.948231], [-60.750025, -32.948249], [-60.750599, -32.948265], [-60.751282, -32.948279], [-60.752494, -32.948314], [-60.754972, -32.948377], [-60.757928, -32.948452], [-60.757944, -32.948007], [-60.757988, -32.947088], [-60.758015, -32.946398], [-60.758062, -32.945313], [-60.758089, -32.944805]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_8f604aa03430d9f2538dbaaf15e93ea8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d9ba03585c49a4dfbbee42ff6cadde85 = $(`<div id="html_d9ba03585c49a4dfbbee42ff6cadde85" style="width: 100.0%; height: 100.0%;">Barrio: TANGO</div>`)[0];
+                popup_8f604aa03430d9f2538dbaaf15e93ea8.setContent(html_d9ba03585c49a4dfbbee42ff6cadde85);
+            
+        
+
+        geo_json_01919c8098038b78519b15437ea225e6.bindPopup(popup_8f604aa03430d9f2538dbaaf15e93ea8)
+        ;
+
+        
+    
+    
+            geo_json_01919c8098038b78519b15437ea225e6.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_7b5b71fd694d628feee16f4c3a2c7a13_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_7b5b71fd694d628feee16f4c3a2c7a13_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7b5b71fd694d628feee16f4c3a2c7a13 = L.geoJson(null, {
+                onEachFeature: geo_json_7b5b71fd694d628feee16f4c3a2c7a13_onEachFeature,
+            
+                style: geo_json_7b5b71fd694d628feee16f4c3a2c7a13_styler,
+        });
+
+        function geo_json_7b5b71fd694d628feee16f4c3a2c7a13_add (data) {
+            geo_json_7b5b71fd694d628feee16f4c3a2c7a13
+                .addData(data);
+        }
+            geo_json_7b5b71fd694d628feee16f4c3a2c7a13_add({"features": [{"geometry": {"coordinates": [[[-60.673679, -32.9682], [-60.672784, -32.964631], [-60.672241, -32.962451], [-60.671631, -32.962556], [-60.666581, -32.963463], [-60.667036, -32.965301], [-60.667683, -32.968049], [-60.669387, -32.974957], [-60.672744, -32.974355], [-60.672822, -32.974063], [-60.673078, -32.973098], [-60.673475, -32.973027], [-60.672885, -32.970726], [-60.673435, -32.970628], [-60.67342, -32.970337], [-60.673376, -32.969447], [-60.673186, -32.968282], [-60.673679, -32.9682]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_d56815a8b060dee710d18d3ffdcd5eaa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_504f5cb6284e56ea46b8d4a7e16fab98 = $(`<div id="html_504f5cb6284e56ea46b8d4a7e16fab98" style="width: 100.0%; height: 100.0%;">Barrio: PARQUE CASADO</div>`)[0];
+                popup_d56815a8b060dee710d18d3ffdcd5eaa.setContent(html_504f5cb6284e56ea46b8d4a7e16fab98);
+            
+        
+
+        geo_json_7b5b71fd694d628feee16f4c3a2c7a13.bindPopup(popup_d56815a8b060dee710d18d3ffdcd5eaa)
+        ;
+
+        
+    
+    
+            geo_json_7b5b71fd694d628feee16f4c3a2c7a13.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_c237c29aee81296a023327cf679c9c1d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_c237c29aee81296a023327cf679c9c1d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c237c29aee81296a023327cf679c9c1d = L.geoJson(null, {
+                onEachFeature: geo_json_c237c29aee81296a023327cf679c9c1d_onEachFeature,
+            
+                style: geo_json_c237c29aee81296a023327cf679c9c1d_styler,
+        });
+
+        function geo_json_c237c29aee81296a023327cf679c9c1d_add (data) {
+            geo_json_c237c29aee81296a023327cf679c9c1d
+                .addData(data);
+        }
+            geo_json_c237c29aee81296a023327cf679c9c1d_add({"features": [{"geometry": {"coordinates": [[[-60.721808, -32.87759], [-60.71995, -32.877509], [-60.715586, -32.87737], [-60.71427, -32.879756], [-60.713018, -32.882342], [-60.712921, -32.882438], [-60.713062, -32.88269], [-60.713221, -32.883062], [-60.713253, -32.883377], [-60.713195, -32.883969], [-60.713155, -32.884454], [-60.713244, -32.884846], [-60.713413, -32.885234], [-60.714165, -32.886089], [-60.714889, -32.886106], [-60.715194, -32.886427], [-60.71948, -32.886593], [-60.719474, -32.88662], [-60.71999, -32.886786], [-60.720489, -32.886794], [-60.720493, -32.884871], [-60.720721, -32.883243], [-60.721808, -32.87759]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_69d02fac9ed8346b65366dcd44f35151 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b518fd3970c8b554b85e54dcc1ce3969 = $(`<div id="html_b518fd3970c8b554b85e54dcc1ce3969" style="width: 100.0%; height: 100.0%;">Barrio: OLIMPICO</div>`)[0];
+                popup_69d02fac9ed8346b65366dcd44f35151.setContent(html_b518fd3970c8b554b85e54dcc1ce3969);
+            
+        
+
+        geo_json_c237c29aee81296a023327cf679c9c1d.bindPopup(popup_69d02fac9ed8346b65366dcd44f35151)
+        ;
+
+        
+    
+    
+            geo_json_c237c29aee81296a023327cf679c9c1d.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_6839610e01c03926513594125ba7662e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_6839610e01c03926513594125ba7662e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6839610e01c03926513594125ba7662e = L.geoJson(null, {
+                onEachFeature: geo_json_6839610e01c03926513594125ba7662e_onEachFeature,
+            
+                style: geo_json_6839610e01c03926513594125ba7662e_styler,
+        });
+
+        function geo_json_6839610e01c03926513594125ba7662e_add (data) {
+            geo_json_6839610e01c03926513594125ba7662e
+                .addData(data);
+        }
+            geo_json_6839610e01c03926513594125ba7662e_add({"features": [{"geometry": {"coordinates": [[[-60.761856, -32.948749], [-60.757928, -32.948452], [-60.754972, -32.948377], [-60.752494, -32.948314], [-60.751282, -32.948279], [-60.750599, -32.948265], [-60.750025, -32.948249], [-60.749459, -32.948231], [-60.744265, -32.948973], [-60.741189, -32.949441], [-60.735295, -32.949507], [-60.722073, -32.949061], [-60.722016, -32.950053], [-60.721973, -32.951216], [-60.722535, -32.951231], [-60.724066, -32.951273], [-60.72407, -32.951296], [-60.724294, -32.951313], [-60.727774, -32.95141], [-60.729065, -32.951455], [-60.730337, -32.95149], [-60.73197, -32.951531], [-60.732606, -32.951542], [-60.732623, -32.951524], [-60.733449, -32.951541], [-60.735692, -32.951595], [-60.735629, -32.950431], [-60.736549, -32.950449], [-60.740722, -32.950519], [-60.742967, -32.950558], [-60.747069, -32.95064], [-60.751661, -32.950741], [-60.752213, -32.950752], [-60.752209, -32.950794], [-60.75304, -32.950812], [-60.761666, -32.95103], [-60.761856, -32.948749]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_da95db1a0866c992d3946d6b1cd91bfd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fd4749dac8c6ee3d551edbf754d12234 = $(`<div id="html_fd4749dac8c6ee3d551edbf754d12234" style="width: 100.0%; height: 100.0%;">Barrio: ANTARTIDA ARGENTINA</div>`)[0];
+                popup_da95db1a0866c992d3946d6b1cd91bfd.setContent(html_fd4749dac8c6ee3d551edbf754d12234);
+            
+        
+
+        geo_json_6839610e01c03926513594125ba7662e.bindPopup(popup_da95db1a0866c992d3946d6b1cd91bfd)
+        ;
+
+        
+    
+    
+            geo_json_6839610e01c03926513594125ba7662e.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_6e0afd2968fb74a142789230854d3a39_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_6e0afd2968fb74a142789230854d3a39_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6e0afd2968fb74a142789230854d3a39 = L.geoJson(null, {
+                onEachFeature: geo_json_6e0afd2968fb74a142789230854d3a39_onEachFeature,
+            
+                style: geo_json_6e0afd2968fb74a142789230854d3a39_styler,
+        });
+
+        function geo_json_6e0afd2968fb74a142789230854d3a39_add (data) {
+            geo_json_6e0afd2968fb74a142789230854d3a39
+                .addData(data);
+        }
+            geo_json_6e0afd2968fb74a142789230854d3a39_add({"features": [{"geometry": {"coordinates": [[[-60.628468, -32.9901], [-60.628434, -32.989434], [-60.628234, -32.985943], [-60.628129, -32.984261], [-60.628017, -32.982346], [-60.626371, -32.982668], [-60.625878, -32.982581], [-60.624841, -32.982755], [-60.623752, -32.98308], [-60.616774, -32.984307], [-60.616531, -32.984348], [-60.61568, -32.986096], [-60.615677, -32.989647], [-60.620075, -32.989841], [-60.628468, -32.9901]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_2a91bbd72719996f62fabacce6c71f3c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0d522c0037848c84e4da0d2cd6b9a68d = $(`<div id="html_0d522c0037848c84e4da0d2cd6b9a68d" style="width: 100.0%; height: 100.0%;">Barrio: VILLA MANUELITA</div>`)[0];
+                popup_2a91bbd72719996f62fabacce6c71f3c.setContent(html_0d522c0037848c84e4da0d2cd6b9a68d);
+            
+        
+
+        geo_json_6e0afd2968fb74a142789230854d3a39.bindPopup(popup_2a91bbd72719996f62fabacce6c71f3c)
+        ;
+
+        
+    
+    
+            geo_json_6e0afd2968fb74a142789230854d3a39.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_0a1fae104734e4a6a0ef4a6dc1c37fd7_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_0a1fae104734e4a6a0ef4a6dc1c37fd7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0a1fae104734e4a6a0ef4a6dc1c37fd7 = L.geoJson(null, {
+                onEachFeature: geo_json_0a1fae104734e4a6a0ef4a6dc1c37fd7_onEachFeature,
+            
+                style: geo_json_0a1fae104734e4a6a0ef4a6dc1c37fd7_styler,
+        });
+
+        function geo_json_0a1fae104734e4a6a0ef4a6dc1c37fd7_add (data) {
+            geo_json_0a1fae104734e4a6a0ef4a6dc1c37fd7
+                .addData(data);
+        }
+            geo_json_0a1fae104734e4a6a0ef4a6dc1c37fd7_add({"features": [{"geometry": {"coordinates": [[[-60.669387, -32.974957], [-60.667683, -32.968049], [-60.665228, -32.968497], [-60.664515, -32.965742], [-60.667036, -32.965301], [-60.666581, -32.963463], [-60.658634, -32.964891], [-60.661514, -32.976365], [-60.663634, -32.975987], [-60.667997, -32.975207], [-60.669387, -32.974957]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_dda3eebaec7b9637f9aa13d8a0ecba3e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_292a1e083c9060d35303a1c68285f03d = $(`<div id="html_292a1e083c9060d35303a1c68285f03d" style="width: 100.0%; height: 100.0%;">Barrio: JORGE CURA</div>`)[0];
+                popup_dda3eebaec7b9637f9aa13d8a0ecba3e.setContent(html_292a1e083c9060d35303a1c68285f03d);
+            
+        
+
+        geo_json_0a1fae104734e4a6a0ef4a6dc1c37fd7.bindPopup(popup_dda3eebaec7b9637f9aa13d8a0ecba3e)
+        ;
+
+        
+    
+    
+            geo_json_0a1fae104734e4a6a0ef4a6dc1c37fd7.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_66283ec2fe5bfe3a91d31ac1c886e813_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_66283ec2fe5bfe3a91d31ac1c886e813_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_66283ec2fe5bfe3a91d31ac1c886e813 = L.geoJson(null, {
+                onEachFeature: geo_json_66283ec2fe5bfe3a91d31ac1c886e813_onEachFeature,
+            
+                style: geo_json_66283ec2fe5bfe3a91d31ac1c886e813_styler,
+        });
+
+        function geo_json_66283ec2fe5bfe3a91d31ac1c886e813_add (data) {
+            geo_json_66283ec2fe5bfe3a91d31ac1c886e813
+                .addData(data);
+        }
+            geo_json_66283ec2fe5bfe3a91d31ac1c886e813_add({"features": [{"geometry": {"coordinates": [[[-60.679127, -32.93906], [-60.678425, -32.936339], [-60.677723, -32.933617], [-60.671145, -32.933371], [-60.670579, -32.933316], [-60.670493, -32.933331], [-60.670462, -32.933225], [-60.669167, -32.933087], [-60.668621, -32.932993], [-60.667891, -32.932798], [-60.667695, -32.932734], [-60.667257, -32.932584], [-60.666141, -32.932217], [-60.665491, -32.932006], [-60.665058, -32.931867], [-60.664522, -32.931963], [-60.666889, -32.941264], [-60.669961, -32.940725], [-60.670976, -32.940537], [-60.677062, -32.939461], [-60.679078, -32.939085], [-60.679127, -32.93906]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_ef424b8da0131b0dafa696eeb4d73cc6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f2ae2a1771fcfae807eff7c0da66f871 = $(`<div id="html_f2ae2a1771fcfae807eff7c0da66f871" style="width: 100.0%; height: 100.0%;">Barrio: LUIS AGOTE</div>`)[0];
+                popup_ef424b8da0131b0dafa696eeb4d73cc6.setContent(html_f2ae2a1771fcfae807eff7c0da66f871);
+            
+        
+
+        geo_json_66283ec2fe5bfe3a91d31ac1c886e813.bindPopup(popup_ef424b8da0131b0dafa696eeb4d73cc6)
+        ;
+
+        
+    
+    
+            geo_json_66283ec2fe5bfe3a91d31ac1c886e813.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_256e5c957d9508d01fda1b2488009ea7_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_256e5c957d9508d01fda1b2488009ea7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_256e5c957d9508d01fda1b2488009ea7 = L.geoJson(null, {
+                onEachFeature: geo_json_256e5c957d9508d01fda1b2488009ea7_onEachFeature,
+            
+                style: geo_json_256e5c957d9508d01fda1b2488009ea7_styler,
+        });
+
+        function geo_json_256e5c957d9508d01fda1b2488009ea7_add (data) {
+            geo_json_256e5c957d9508d01fda1b2488009ea7
+                .addData(data);
+        }
+            geo_json_256e5c957d9508d01fda1b2488009ea7_add({"features": [{"geometry": {"coordinates": [[[-60.628839, -32.996479], [-60.628836, -32.996404], [-60.628746, -32.994883], [-60.628686, -32.993787], [-60.628622, -32.992627], [-60.628553, -32.991377], [-60.628502, -32.990533], [-60.628468, -32.9901], [-60.620075, -32.989841], [-60.615677, -32.989647], [-60.615188, -32.991622], [-60.615013, -32.992681], [-60.614987, -32.992703], [-60.613547, -32.994536], [-60.613428, -32.994912], [-60.612778, -32.996944], [-60.61383, -32.998077], [-60.615313, -32.997396], [-60.615326, -32.996744], [-60.615653, -32.996389], [-60.616334, -32.996335], [-60.616733, -32.995994], [-60.61728, -32.994866], [-60.618722, -32.995396], [-60.619286, -32.995693], [-60.620214, -32.996144], [-60.620348, -32.996209], [-60.622325, -32.99627], [-60.628839, -32.996479]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_c9cb8a626c61e1d6ed00484e17ce8ea6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3ac2a5f635d701ada202a00d077aa185 = $(`<div id="html_3ac2a5f635d701ada202a00d077aa185" style="width: 100.0%; height: 100.0%;">Barrio: ESTEBAN ECHEVERRIA</div>`)[0];
+                popup_c9cb8a626c61e1d6ed00484e17ce8ea6.setContent(html_3ac2a5f635d701ada202a00d077aa185);
+            
+        
+
+        geo_json_256e5c957d9508d01fda1b2488009ea7.bindPopup(popup_c9cb8a626c61e1d6ed00484e17ce8ea6)
+        ;
+
+        
+    
+    
+            geo_json_256e5c957d9508d01fda1b2488009ea7.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_ab20e287c5a75b34554422e21aa90dfa_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_ab20e287c5a75b34554422e21aa90dfa_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ab20e287c5a75b34554422e21aa90dfa = L.geoJson(null, {
+                onEachFeature: geo_json_ab20e287c5a75b34554422e21aa90dfa_onEachFeature,
+            
+                style: geo_json_ab20e287c5a75b34554422e21aa90dfa_styler,
+        });
+
+        function geo_json_ab20e287c5a75b34554422e21aa90dfa_add (data) {
+            geo_json_ab20e287c5a75b34554422e21aa90dfa
+                .addData(data);
+        }
+            geo_json_ab20e287c5a75b34554422e21aa90dfa_add({"features": [{"geometry": {"coordinates": [[[-60.660399, -32.994352], [-60.647403, -32.993943], [-60.647587, -32.994789], [-60.648072, -32.997069], [-60.648092, -32.997166], [-60.648264, -32.997958], [-60.648606, -32.999543], [-60.648847, -33.00067], [-60.649264, -33.002589], [-60.649637, -33.00438], [-60.650025, -33.006162], [-60.650351, -33.007673], [-60.650593, -33.008884], [-60.651215, -33.008053], [-60.651322, -33.007909], [-60.651953, -33.006943], [-60.652572, -33.005993], [-60.653067, -33.005251], [-60.653166, -33.005131], [-60.653778, -33.004352], [-60.654566, -33.00316], [-60.656876, -32.99966], [-60.657822, -32.998239], [-60.658373, -32.997397], [-60.659242, -32.996094], [-60.660035, -32.994886], [-60.660399, -32.994352]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_d49f2912da04c0658d617c32dced4fb4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0807cf9850eacfd34d646957dc0309fb = $(`<div id="html_0807cf9850eacfd34d646957dc0309fb" style="width: 100.0%; height: 100.0%;">Barrio: TIRO SUIZO</div>`)[0];
+                popup_d49f2912da04c0658d617c32dced4fb4.setContent(html_0807cf9850eacfd34d646957dc0309fb);
+            
+        
+
+        geo_json_ab20e287c5a75b34554422e21aa90dfa.bindPopup(popup_d49f2912da04c0658d617c32dced4fb4)
+        ;
+
+        
+    
+    
+            geo_json_ab20e287c5a75b34554422e21aa90dfa.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_a77b32a19afcd77bc307a121fef6c7e7_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_a77b32a19afcd77bc307a121fef6c7e7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a77b32a19afcd77bc307a121fef6c7e7 = L.geoJson(null, {
+                onEachFeature: geo_json_a77b32a19afcd77bc307a121fef6c7e7_onEachFeature,
+            
+                style: geo_json_a77b32a19afcd77bc307a121fef6c7e7_styler,
+        });
+
+        function geo_json_a77b32a19afcd77bc307a121fef6c7e7_add (data) {
+            geo_json_a77b32a19afcd77bc307a121fef6c7e7
+                .addData(data);
+        }
+            geo_json_a77b32a19afcd77bc307a121fef6c7e7_add({"features": [{"geometry": {"coordinates": [[[-60.703644, -32.934665], [-60.702051, -32.934953], [-60.699073, -32.935489], [-60.694962, -32.936238], [-60.693044, -32.936582], [-60.69304, -32.9367], [-60.692946, -32.93945], [-60.692939, -32.940112], [-60.693103, -32.940474], [-60.693148, -32.94064], [-60.693131, -32.941848], [-60.693096, -32.94322], [-60.693057, -32.944328], [-60.693021, -32.945555], [-60.692977, -32.946838], [-60.692938, -32.947894], [-60.692933, -32.948054], [-60.6929, -32.949257], [-60.693302, -32.949266], [-60.693402, -32.949272], [-60.695624, -32.94933], [-60.700172, -32.949455], [-60.702943, -32.949527], [-60.702951, -32.949292], [-60.703026, -32.947315], [-60.703158, -32.944529], [-60.70336, -32.940012], [-60.70347, -32.937958], [-60.703503, -32.937465], [-60.703608, -32.935327], [-60.703644, -32.934665]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_10707032ba809be7320209053dbe0338 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd64f74ae38f5cf5668154fc1bdea537 = $(`<div id="html_dd64f74ae38f5cf5668154fc1bdea537" style="width: 100.0%; height: 100.0%;">Barrio: AZCUENAGA</div>`)[0];
+                popup_10707032ba809be7320209053dbe0338.setContent(html_dd64f74ae38f5cf5668154fc1bdea537);
+            
+        
+
+        geo_json_a77b32a19afcd77bc307a121fef6c7e7.bindPopup(popup_10707032ba809be7320209053dbe0338)
+        ;
+
+        
+    
+    
+            geo_json_a77b32a19afcd77bc307a121fef6c7e7.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_d731a65948b5f5c7150a6de18a7d3a7c_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_d731a65948b5f5c7150a6de18a7d3a7c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d731a65948b5f5c7150a6de18a7d3a7c = L.geoJson(null, {
+                onEachFeature: geo_json_d731a65948b5f5c7150a6de18a7d3a7c_onEachFeature,
+            
+                style: geo_json_d731a65948b5f5c7150a6de18a7d3a7c_styler,
+        });
+
+        function geo_json_d731a65948b5f5c7150a6de18a7d3a7c_add (data) {
+            geo_json_d731a65948b5f5c7150a6de18a7d3a7c
+                .addData(data);
+        }
+            geo_json_d731a65948b5f5c7150a6de18a7d3a7c_add({"features": [{"geometry": {"coordinates": [[[-60.715586, -32.87737], [-60.713299, -32.877245], [-60.709304, -32.877076], [-60.70717, -32.87699], [-60.70524, -32.876885], [-60.704936, -32.876867], [-60.702983, -32.882524], [-60.702697, -32.883286], [-60.702538, -32.883429], [-60.702492, -32.88356], [-60.702455, -32.883705], [-60.702324, -32.884084], [-60.702278, -32.884209], [-60.702149, -32.88459], [-60.702083, -32.884771], [-60.701954, -32.885149], [-60.701912, -32.885275], [-60.701797, -32.88565], [-60.701742, -32.885778], [-60.701608, -32.886163], [-60.701558, -32.886274], [-60.701513, -32.886444], [-60.70158, -32.886544], [-60.700734, -32.889034], [-60.700581, -32.889142], [-60.700262, -32.890169], [-60.699959, -32.891036], [-60.699635, -32.891899], [-60.699324, -32.892778], [-60.699301, -32.89284], [-60.699529, -32.89289], [-60.703175, -32.89369], [-60.703365, -32.8937], [-60.70523, -32.893787], [-60.705304, -32.893678], [-60.705851, -32.892905], [-60.706258, -32.892324], [-60.70646, -32.892028], [-60.706607, -32.891813], [-60.707399, -32.890654], [-60.708152, -32.889549], [-60.708433, -32.889114], [-60.708872, -32.888266], [-60.708934, -32.88814], [-60.709, -32.888014], [-60.709644, -32.886747], [-60.710017, -32.885987], [-60.71155, -32.886054], [-60.712681, -32.886093], [-60.714165, -32.886089], [-60.713413, -32.885234], [-60.713244, -32.884846], [-60.713155, -32.884454], [-60.713195, -32.883969], [-60.713253, -32.883377], [-60.713221, -32.883062], [-60.713062, -32.88269], [-60.712921, -32.882438], [-60.713018, -32.882342], [-60.71427, -32.879756], [-60.715586, -32.87737]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_67abdcf094491b729da6eb07afe9ab97 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_28bcb499d32074db3a1e0569c5790102 = $(`<div id="html_28bcb499d32074db3a1e0569c5790102" style="width: 100.0%; height: 100.0%;">Barrio: LA CERAMICA Y CUYO</div>`)[0];
+                popup_67abdcf094491b729da6eb07afe9ab97.setContent(html_28bcb499d32074db3a1e0569c5790102);
+            
+        
+
+        geo_json_d731a65948b5f5c7150a6de18a7d3a7c.bindPopup(popup_67abdcf094491b729da6eb07afe9ab97)
+        ;
+
+        
+    
+    
+            geo_json_d731a65948b5f5c7150a6de18a7d3a7c.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_1ab0d921749784dc0b78a96d5ca7bca5_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_1ab0d921749784dc0b78a96d5ca7bca5_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_1ab0d921749784dc0b78a96d5ca7bca5 = L.geoJson(null, {
+                onEachFeature: geo_json_1ab0d921749784dc0b78a96d5ca7bca5_onEachFeature,
+            
+                style: geo_json_1ab0d921749784dc0b78a96d5ca7bca5_styler,
+        });
+
+        function geo_json_1ab0d921749784dc0b78a96d5ca7bca5_add (data) {
+            geo_json_1ab0d921749784dc0b78a96d5ca7bca5
+                .addData(data);
+        }
+            geo_json_1ab0d921749784dc0b78a96d5ca7bca5_add({"features": [{"geometry": {"coordinates": [[[-60.665369, -32.992077], [-60.665341, -32.991387], [-60.664506, -32.988102], [-60.663565, -32.984394], [-60.646011, -32.98754], [-60.647403, -32.993943], [-60.660399, -32.994352], [-60.660574, -32.994065], [-60.661305, -32.994389], [-60.665293, -32.994496], [-60.665369, -32.992077]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_89dd52ba0f34f24c168d21c87654dc0b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_18852babfb831d59555d35fa063afe5f = $(`<div id="html_18852babfb831d59555d35fa063afe5f" style="width: 100.0%; height: 100.0%;">Barrio: NTRA SRA, DE LA GUARDIA</div>`)[0];
+                popup_89dd52ba0f34f24c168d21c87654dc0b.setContent(html_18852babfb831d59555d35fa063afe5f);
+            
+        
+
+        geo_json_1ab0d921749784dc0b78a96d5ca7bca5.bindPopup(popup_89dd52ba0f34f24c168d21c87654dc0b)
+        ;
+
+        
+    
+    
+            geo_json_1ab0d921749784dc0b78a96d5ca7bca5.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_232950cd54e16abd91744080d3ce8249_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_232950cd54e16abd91744080d3ce8249_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_232950cd54e16abd91744080d3ce8249 = L.geoJson(null, {
+                onEachFeature: geo_json_232950cd54e16abd91744080d3ce8249_onEachFeature,
+            
+                style: geo_json_232950cd54e16abd91744080d3ce8249_styler,
+        });
+
+        function geo_json_232950cd54e16abd91744080d3ce8249_add (data) {
+            geo_json_232950cd54e16abd91744080d3ce8249
+                .addData(data);
+        }
+            geo_json_232950cd54e16abd91744080d3ce8249_add({"features": [{"geometry": {"coordinates": [[[-60.655905, -32.96538], [-60.653594, -32.95621], [-60.65496, -32.95597], [-60.654679, -32.95481], [-60.639414, -32.957553], [-60.642004, -32.967869], [-60.645784, -32.967194], [-60.651554, -32.966152], [-60.655905, -32.96538]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_6e6252db53320bab5a04a7958eaf9026 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3f0ca0216ca1188754e58e12327826b1 = $(`<div id="html_3f0ca0216ca1188754e58e12327826b1" style="width: 100.0%; height: 100.0%;">Barrio: DEL ABASTO</div>`)[0];
+                popup_6e6252db53320bab5a04a7958eaf9026.setContent(html_3f0ca0216ca1188754e58e12327826b1);
+            
+        
+
+        geo_json_232950cd54e16abd91744080d3ce8249.bindPopup(popup_6e6252db53320bab5a04a7958eaf9026)
+        ;
+
+        
+    
+    
+            geo_json_232950cd54e16abd91744080d3ce8249.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_0f86caeb4bb1051c7b9ca7002c4463ff_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_0f86caeb4bb1051c7b9ca7002c4463ff_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0f86caeb4bb1051c7b9ca7002c4463ff = L.geoJson(null, {
+                onEachFeature: geo_json_0f86caeb4bb1051c7b9ca7002c4463ff_onEachFeature,
+            
+                style: geo_json_0f86caeb4bb1051c7b9ca7002c4463ff_styler,
+        });
+
+        function geo_json_0f86caeb4bb1051c7b9ca7002c4463ff_add (data) {
+            geo_json_0f86caeb4bb1051c7b9ca7002c4463ff
+                .addData(data);
+        }
+            geo_json_0f86caeb4bb1051c7b9ca7002c4463ff_add({"features": [{"geometry": {"coordinates": [[[-60.669635, -32.952137], [-60.666889, -32.941264], [-60.653294, -32.943702], [-60.656048, -32.954596], [-60.669635, -32.952137]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_26a3e4e440b9260158de3dbe2b56c8d7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c8c772574bb3b87254cd161145786b6d = $(`<div id="html_c8c772574bb3b87254cd161145786b6d" style="width: 100.0%; height: 100.0%;">Barrio: NTRA SRA DE LOURDES</div>`)[0];
+                popup_26a3e4e440b9260158de3dbe2b56c8d7.setContent(html_c8c772574bb3b87254cd161145786b6d);
+            
+        
+
+        geo_json_0f86caeb4bb1051c7b9ca7002c4463ff.bindPopup(popup_26a3e4e440b9260158de3dbe2b56c8d7)
+        ;
+
+        
+    
+    
+            geo_json_0f86caeb4bb1051c7b9ca7002c4463ff.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_d3ebb22dc1ef19f374adc4a9c29d3a5d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_d3ebb22dc1ef19f374adc4a9c29d3a5d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d3ebb22dc1ef19f374adc4a9c29d3a5d = L.geoJson(null, {
+                onEachFeature: geo_json_d3ebb22dc1ef19f374adc4a9c29d3a5d_onEachFeature,
+            
+                style: geo_json_d3ebb22dc1ef19f374adc4a9c29d3a5d_styler,
+        });
+
+        function geo_json_d3ebb22dc1ef19f374adc4a9c29d3a5d_add (data) {
+            geo_json_d3ebb22dc1ef19f374adc4a9c29d3a5d
+                .addData(data);
+        }
+            geo_json_d3ebb22dc1ef19f374adc4a9c29d3a5d_add({"features": [{"geometry": {"coordinates": [[[-60.664519, -33.014346], [-60.661384, -33.015236], [-60.656784, -33.016017], [-60.65717, -33.009105], [-60.650593, -33.008884], [-60.654173, -33.025318], [-60.654298, -33.025493], [-60.656102, -33.026531], [-60.661467, -33.026425], [-60.663791, -33.026236], [-60.664519, -33.014346]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_754a48f237ac6af412ba406a5c026955 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_96267c85578a7d442ad26feedf642a97 = $(`<div id="html_96267c85578a7d442ad26feedf642a97" style="width: 100.0%; height: 100.0%;">Barrio: LAS FLORES</div>`)[0];
+                popup_754a48f237ac6af412ba406a5c026955.setContent(html_96267c85578a7d442ad26feedf642a97);
+            
+        
+
+        geo_json_d3ebb22dc1ef19f374adc4a9c29d3a5d.bindPopup(popup_754a48f237ac6af412ba406a5c026955)
+        ;
+
+        
+    
+    
+            geo_json_d3ebb22dc1ef19f374adc4a9c29d3a5d.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_9ede406487b87f1d703209e130e53917_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_9ede406487b87f1d703209e130e53917_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9ede406487b87f1d703209e130e53917 = L.geoJson(null, {
+                onEachFeature: geo_json_9ede406487b87f1d703209e130e53917_onEachFeature,
+            
+                style: geo_json_9ede406487b87f1d703209e130e53917_styler,
+        });
+
+        function geo_json_9ede406487b87f1d703209e130e53917_add (data) {
+            geo_json_9ede406487b87f1d703209e130e53917
+                .addData(data);
+        }
+            geo_json_9ede406487b87f1d703209e130e53917_add({"features": [{"geometry": {"coordinates": [[[-60.666889, -32.941264], [-60.664522, -32.931963], [-60.665058, -32.931867], [-60.664034, -32.931528], [-60.663166, -32.931245], [-60.661969, -32.931205], [-60.661456, -32.931193], [-60.660692, -32.931174], [-60.660187, -32.931152], [-60.660095, -32.931146], [-60.660072, -32.931042], [-60.657982, -32.930983], [-60.656812, -32.930948], [-60.654388, -32.93088], [-60.654304, -32.930975], [-60.653974, -32.930938], [-60.653643, -32.930827], [-60.653646, -32.930765], [-60.650858, -32.9307], [-60.650807, -32.930524], [-60.650282, -32.930779], [-60.650119, -32.930847], [-60.6501, -32.930865], [-60.650183, -32.931304], [-60.652112, -32.939001], [-60.653294, -32.943702], [-60.666889, -32.941264]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_e3a04b005566bcfee50f8a862f55247d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d96310b6e3a76ab6f35a384695f8cf4 = $(`<div id="html_1d96310b6e3a76ab6f35a384695f8cf4" style="width: 100.0%; height: 100.0%;">Barrio: ALBERTO OLMEDO</div>`)[0];
+                popup_e3a04b005566bcfee50f8a862f55247d.setContent(html_1d96310b6e3a76ab6f35a384695f8cf4);
+            
+        
+
+        geo_json_9ede406487b87f1d703209e130e53917.bindPopup(popup_e3a04b005566bcfee50f8a862f55247d)
+        ;
+
+        
+    
+    
+            geo_json_9ede406487b87f1d703209e130e53917.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_602a93234b4874f5744f6285ea62ca60_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_602a93234b4874f5744f6285ea62ca60_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_602a93234b4874f5744f6285ea62ca60 = L.geoJson(null, {
+                onEachFeature: geo_json_602a93234b4874f5744f6285ea62ca60_onEachFeature,
+            
+                style: geo_json_602a93234b4874f5744f6285ea62ca60_styler,
+        });
+
+        function geo_json_602a93234b4874f5744f6285ea62ca60_add (data) {
+            geo_json_602a93234b4874f5744f6285ea62ca60
+                .addData(data);
+        }
+            geo_json_602a93234b4874f5744f6285ea62ca60_add({"features": [{"geometry": {"coordinates": [[[-60.658797, -32.976849], [-60.658736, -32.976617], [-60.657838, -32.973058], [-60.656292, -32.966937], [-60.655905, -32.96538], [-60.651554, -32.966152], [-60.645784, -32.967194], [-60.642004, -32.967869], [-60.642297, -32.969026], [-60.642804, -32.971049], [-60.643236, -32.972738], [-60.643735, -32.974757], [-60.64431, -32.977029], [-60.644318, -32.977238], [-60.64415, -32.977847], [-60.644126, -32.978269], [-60.644347, -32.979436], [-60.649869, -32.978449], [-60.658797, -32.976849]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_79d04c5e2e1c5f4675a9b45a92e01feb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ba9fced8f7963ed2f18b45a466227398 = $(`<div id="html_ba9fced8f7963ed2f18b45a466227398" style="width: 100.0%; height: 100.0%;">Barrio: ESPAÑA Y HOSPITALES</div>`)[0];
+                popup_79d04c5e2e1c5f4675a9b45a92e01feb.setContent(html_ba9fced8f7963ed2f18b45a466227398);
+            
+        
+
+        geo_json_602a93234b4874f5744f6285ea62ca60.bindPopup(popup_79d04c5e2e1c5f4675a9b45a92e01feb)
+        ;
+
+        
+    
+    
+            geo_json_602a93234b4874f5744f6285ea62ca60.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_7f2aebe26f0c5cac4e0a72409121d954_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_7f2aebe26f0c5cac4e0a72409121d954_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7f2aebe26f0c5cac4e0a72409121d954 = L.geoJson(null, {
+                onEachFeature: geo_json_7f2aebe26f0c5cac4e0a72409121d954_onEachFeature,
+            
+                style: geo_json_7f2aebe26f0c5cac4e0a72409121d954_styler,
+        });
+
+        function geo_json_7f2aebe26f0c5cac4e0a72409121d954_add (data) {
+            geo_json_7f2aebe26f0c5cac4e0a72409121d954
+                .addData(data);
+        }
+            geo_json_7f2aebe26f0c5cac4e0a72409121d954_add({"features": [{"geometry": {"coordinates": [[[-60.691327, -32.970459], [-60.689926, -32.964951], [-60.688644, -32.96492], [-60.688647, -32.964858], [-60.688664, -32.964393], [-60.68866, -32.964312], [-60.689733, -32.964122], [-60.688579, -32.959526], [-60.685037, -32.960169], [-60.674918, -32.961975], [-60.672241, -32.962451], [-60.672784, -32.964631], [-60.673679, -32.9682], [-60.673186, -32.968282], [-60.673376, -32.969447], [-60.67342, -32.970337], [-60.673435, -32.970628], [-60.672885, -32.970726], [-60.673475, -32.973027], [-60.673078, -32.973098], [-60.672822, -32.974063], [-60.672744, -32.974355], [-60.673759, -32.974174], [-60.674396, -32.974062], [-60.68163, -32.972761], [-60.68739, -32.971722], [-60.690298, -32.971211], [-60.690377, -32.971318], [-60.690325, -32.972186], [-60.690318, -32.972303], [-60.691041, -32.970548], [-60.691117, -32.970452], [-60.691327, -32.970459]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_a3dd33b2fe8c45b227f4b335f6ea0af7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a2f2f5e558b48444b0671effa4eb5e40 = $(`<div id="html_a2f2f5e558b48444b0671effa4eb5e40" style="width: 100.0%; height: 100.0%;">Barrio: BELLA VISTA</div>`)[0];
+                popup_a3dd33b2fe8c45b227f4b335f6ea0af7.setContent(html_a2f2f5e558b48444b0671effa4eb5e40);
+            
+        
+
+        geo_json_7f2aebe26f0c5cac4e0a72409121d954.bindPopup(popup_a3dd33b2fe8c45b227f4b335f6ea0af7)
+        ;
+
+        
+    
+    
+            geo_json_7f2aebe26f0c5cac4e0a72409121d954.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_db7347a3ad75951ac35b4f14cdfb7e8f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_db7347a3ad75951ac35b4f14cdfb7e8f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_db7347a3ad75951ac35b4f14cdfb7e8f = L.geoJson(null, {
+                onEachFeature: geo_json_db7347a3ad75951ac35b4f14cdfb7e8f_onEachFeature,
+            
+                style: geo_json_db7347a3ad75951ac35b4f14cdfb7e8f_styler,
+        });
+
+        function geo_json_db7347a3ad75951ac35b4f14cdfb7e8f_add (data) {
+            geo_json_db7347a3ad75951ac35b4f14cdfb7e8f
+                .addData(data);
+        }
+            geo_json_db7347a3ad75951ac35b4f14cdfb7e8f_add({"features": [{"geometry": {"coordinates": [[[-60.699019, -32.913407], [-60.69709, -32.913366], [-60.69535, -32.913317], [-60.694795, -32.913299], [-60.694601, -32.913413], [-60.69443, -32.913572], [-60.694278, -32.913781], [-60.694179, -32.913984], [-60.694088, -32.91419], [-60.694074, -32.914346], [-60.693773, -32.91434], [-60.693668, -32.913911], [-60.693612, -32.913697], [-60.693508, -32.91343], [-60.693321, -32.913039], [-60.693175, -32.912811], [-60.693101, -32.912812], [-60.692652, -32.912798], [-60.692537, -32.913088], [-60.692681, -32.913161], [-60.692647, -32.91326], [-60.692359, -32.913219], [-60.692294, -32.913219], [-60.692191, -32.913165], [-60.692002, -32.913113], [-60.691679, -32.913209], [-60.691129, -32.913193], [-60.689716, -32.913148], [-60.687852, -32.913094], [-60.68382, -32.912984], [-60.67886, -32.912843], [-60.676498, -32.912779], [-60.675401, -32.912751], [-60.675406, -32.912619], [-60.675425, -32.912094], [-60.674681, -32.912078], [-60.674329, -32.912098], [-60.674003, -32.912172], [-60.673672, -32.912311], [-60.673514, -32.912405], [-60.673319, -32.912546], [-60.673146, -32.912723], [-60.673043, -32.91286], [-60.672969, -32.912971], [-60.672886, -32.913157], [-60.67275, -32.913156], [-60.672227, -32.91314], [-60.672109, -32.91314], [-60.672042, -32.913435], [-60.67155, -32.913668], [-60.670187, -32.915518], [-60.667951, -32.918874], [-60.666351, -32.920495], [-60.667366, -32.920395], [-60.668776, -32.92043], [-60.668834, -32.920484], [-60.673675, -32.920644], [-60.674428, -32.920666], [-60.679038, -32.920813], [-60.679732, -32.920832], [-60.680889, -32.920875], [-60.681147, -32.920832], [-60.681762, -32.920847], [-60.686142, -32.920977], [-60.687152, -32.921008], [-60.68773, -32.921064], [-60.691807, -32.921191], [-60.693544, -32.921278], [-60.693641, -32.920329], [-60.693679, -32.920063], [-60.693755, -32.919717], [-60.693887, -32.91966], [-60.694308, -32.918412], [-60.694388, -32.918216], [-60.694757, -32.917603], [-60.695109, -32.917046], [-60.69548, -32.916558], [-60.695901, -32.916058], [-60.696347, -32.915603], [-60.696502, -32.91548], [-60.697227, -32.914855], [-60.697692, -32.914451], [-60.697702, -32.914387], [-60.698262, -32.913974], [-60.699019, -32.913407]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_cfbe7c614b3c715ce89d8bd778760ace = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d194abeba54b6ff58fd5d692b09e3410 = $(`<div id="html_d194abeba54b6ff58fd5d692b09e3410" style="width: 100.0%; height: 100.0%;">Barrio: LISANDRO DE LA TORRE</div>`)[0];
+                popup_cfbe7c614b3c715ce89d8bd778760ace.setContent(html_d194abeba54b6ff58fd5d692b09e3410);
+            
+        
+
+        geo_json_db7347a3ad75951ac35b4f14cdfb7e8f.bindPopup(popup_cfbe7c614b3c715ce89d8bd778760ace)
+        ;
+
+        
+    
+    
+            geo_json_db7347a3ad75951ac35b4f14cdfb7e8f.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_d5c47e09e4f30b7487d08e43428f2d22_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_d5c47e09e4f30b7487d08e43428f2d22_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d5c47e09e4f30b7487d08e43428f2d22 = L.geoJson(null, {
+                onEachFeature: geo_json_d5c47e09e4f30b7487d08e43428f2d22_onEachFeature,
+            
+                style: geo_json_d5c47e09e4f30b7487d08e43428f2d22_styler,
+        });
+
+        function geo_json_d5c47e09e4f30b7487d08e43428f2d22_add (data) {
+            geo_json_d5c47e09e4f30b7487d08e43428f2d22
+                .addData(data);
+        }
+            geo_json_d5c47e09e4f30b7487d08e43428f2d22_add({"features": [{"geometry": {"coordinates": [[[-60.674046, -32.975315], [-60.673759, -32.974174], [-60.672744, -32.974355], [-60.669387, -32.974957], [-60.667997, -32.975207], [-60.663634, -32.975987], [-60.661514, -32.976365], [-60.658797, -32.976849], [-60.649869, -32.978449], [-60.644347, -32.979436], [-60.644856, -32.982114], [-60.645736, -32.986282], [-60.646011, -32.98754], [-60.663565, -32.984394], [-60.664506, -32.988102], [-60.66565, -32.986416], [-60.665914, -32.985863], [-60.666698, -32.98469], [-60.668467, -32.98181], [-60.668905, -32.98111], [-60.669018, -32.980931], [-60.669492, -32.980174], [-60.669565, -32.980058], [-60.669481, -32.979728], [-60.670508, -32.979545], [-60.670229, -32.978401], [-60.671902, -32.978101], [-60.67162, -32.976962], [-60.672987, -32.976707], [-60.672685, -32.975557], [-60.674046, -32.975315]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_f9928650aa08cad9c1d9b74be734d831 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c5026b565529e6bc75861332fa6e2a0e = $(`<div id="html_c5026b565529e6bc75861332fa6e2a0e" style="width: 100.0%; height: 100.0%;">Barrio: MATHEU</div>`)[0];
+                popup_f9928650aa08cad9c1d9b74be734d831.setContent(html_c5026b565529e6bc75861332fa6e2a0e);
+            
+        
+
+        geo_json_d5c47e09e4f30b7487d08e43428f2d22.bindPopup(popup_f9928650aa08cad9c1d9b74be734d831)
+        ;
+
+        
+    
+    
+            geo_json_d5c47e09e4f30b7487d08e43428f2d22.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_65894f7f2ac706f244b714ccf6f80d8d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_65894f7f2ac706f244b714ccf6f80d8d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_65894f7f2ac706f244b714ccf6f80d8d = L.geoJson(null, {
+                onEachFeature: geo_json_65894f7f2ac706f244b714ccf6f80d8d_onEachFeature,
+            
+                style: geo_json_65894f7f2ac706f244b714ccf6f80d8d_styler,
+        });
+
+        function geo_json_65894f7f2ac706f244b714ccf6f80d8d_add (data) {
+            geo_json_65894f7f2ac706f244b714ccf6f80d8d
+                .addData(data);
+        }
+            geo_json_65894f7f2ac706f244b714ccf6f80d8d_add({"features": [{"geometry": {"coordinates": [[[-60.692933, -32.948054], [-60.692491, -32.948044], [-60.692264, -32.948079], [-60.686457, -32.949127], [-60.680721, -32.950154], [-60.67659, -32.950891], [-60.671978, -32.951718], [-60.669635, -32.952137], [-60.670419, -32.955231], [-60.670622, -32.956054], [-60.670937, -32.957314], [-60.671384, -32.959037], [-60.671541, -32.959652], [-60.672241, -32.962451], [-60.674918, -32.961975], [-60.685037, -32.960169], [-60.688579, -32.959526], [-60.68965, -32.959332], [-60.691038, -32.959077], [-60.691129, -32.958947], [-60.692333, -32.958778], [-60.692478, -32.958611], [-60.692597, -32.958477], [-60.692674, -32.956279], [-60.692723, -32.953914], [-60.692773, -32.952709], [-60.692819, -32.951577], [-60.6929, -32.949257], [-60.692933, -32.948054]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_3081c1b8e09f45e1967b5aa5ab67ead3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fe4098201d2c30df7c47c7ed76dd2e00 = $(`<div id="html_fe4098201d2c30df7c47c7ed76dd2e00" style="width: 100.0%; height: 100.0%;">Barrio: CINCO ESQUINAS</div>`)[0];
+                popup_3081c1b8e09f45e1967b5aa5ab67ead3.setContent(html_fe4098201d2c30df7c47c7ed76dd2e00);
+            
+        
+
+        geo_json_65894f7f2ac706f244b714ccf6f80d8d.bindPopup(popup_3081c1b8e09f45e1967b5aa5ab67ead3)
+        ;
+
+        
+    
+    
+            geo_json_65894f7f2ac706f244b714ccf6f80d8d.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_f7e9bff94d943b9facf7897f1d4696f7_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_f7e9bff94d943b9facf7897f1d4696f7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f7e9bff94d943b9facf7897f1d4696f7 = L.geoJson(null, {
+                onEachFeature: geo_json_f7e9bff94d943b9facf7897f1d4696f7_onEachFeature,
+            
+                style: geo_json_f7e9bff94d943b9facf7897f1d4696f7_styler,
+        });
+
+        function geo_json_f7e9bff94d943b9facf7897f1d4696f7_add (data) {
+            geo_json_f7e9bff94d943b9facf7897f1d4696f7
+                .addData(data);
+        }
+            geo_json_f7e9bff94d943b9facf7897f1d4696f7_add({"features": [{"geometry": {"coordinates": [[[-60.642004, -32.967869], [-60.639414, -32.957553], [-60.639082, -32.957613], [-60.633791, -32.958572], [-60.626333, -32.959893], [-60.625525, -32.960041], [-60.625444, -32.96009], [-60.621102, -32.960837], [-60.620906, -32.960798], [-60.619962, -32.960953], [-60.619788, -32.960961], [-60.61919, -32.962392], [-60.618625, -32.964142], [-60.618375, -32.965857], [-60.618066, -32.967999], [-60.617709, -32.969473], [-60.617612, -32.970618], [-60.617589, -32.971798], [-60.617807, -32.971804], [-60.619516, -32.971875], [-60.621844, -32.971471], [-60.622862, -32.971285], [-60.633578, -32.969371], [-60.640826, -32.968078], [-60.642004, -32.967869]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_e643a2c615493d096dace312368d9160 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5fb2cb8899e36e50eb42c3e653316eef = $(`<div id="html_5fb2cb8899e36e50eb42c3e653316eef" style="width: 100.0%; height: 100.0%;">Barrio: REPUBLICA DE LA 6TA</div>`)[0];
+                popup_e643a2c615493d096dace312368d9160.setContent(html_5fb2cb8899e36e50eb42c3e653316eef);
+            
+        
+
+        geo_json_f7e9bff94d943b9facf7897f1d4696f7.bindPopup(popup_e643a2c615493d096dace312368d9160)
+        ;
+
+        
+    
+    
+            geo_json_f7e9bff94d943b9facf7897f1d4696f7.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_2f06a2444cd000ca3853deb13aa0df5a_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_2f06a2444cd000ca3853deb13aa0df5a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_2f06a2444cd000ca3853deb13aa0df5a = L.geoJson(null, {
+                onEachFeature: geo_json_2f06a2444cd000ca3853deb13aa0df5a_onEachFeature,
+            
+                style: geo_json_2f06a2444cd000ca3853deb13aa0df5a_styler,
+        });
+
+        function geo_json_2f06a2444cd000ca3853deb13aa0df5a_add (data) {
+            geo_json_2f06a2444cd000ca3853deb13aa0df5a
+                .addData(data);
+        }
+            geo_json_2f06a2444cd000ca3853deb13aa0df5a_add({"features": [{"geometry": {"coordinates": [[[-60.712205, -32.949775], [-60.709693, -32.949712], [-60.704224, -32.949553], [-60.702943, -32.949527], [-60.700172, -32.949455], [-60.695624, -32.94933], [-60.693402, -32.949272], [-60.693302, -32.949266], [-60.6929, -32.949257], [-60.692819, -32.951577], [-60.692773, -32.952709], [-60.692723, -32.953914], [-60.692674, -32.956279], [-60.692597, -32.958477], [-60.692478, -32.958611], [-60.69303, -32.958667], [-60.693167, -32.958738], [-60.698668, -32.961501], [-60.702707, -32.963527], [-60.708613, -32.966492], [-60.710993, -32.967692], [-60.711493, -32.96794], [-60.711588, -32.965425], [-60.711818, -32.959657], [-60.712007, -32.954844], [-60.712121, -32.951957], [-60.712186, -32.950245], [-60.712205, -32.949775]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_b700f8b13b1893408d200093cefb33d1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_57c2fd062df89f5f398144ac2448c7cc = $(`<div id="html_57c2fd062df89f5f398144ac2448c7cc" style="width: 100.0%; height: 100.0%;">Barrio: URQUIZA</div>`)[0];
+                popup_b700f8b13b1893408d200093cefb33d1.setContent(html_57c2fd062df89f5f398144ac2448c7cc);
+            
+        
+
+        geo_json_2f06a2444cd000ca3853deb13aa0df5a.bindPopup(popup_b700f8b13b1893408d200093cefb33d1)
+        ;
+
+        
+    
+    
+            geo_json_2f06a2444cd000ca3853deb13aa0df5a.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_619afb63a2674892c229dbf977b80a8e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_619afb63a2674892c229dbf977b80a8e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_619afb63a2674892c229dbf977b80a8e = L.geoJson(null, {
+                onEachFeature: geo_json_619afb63a2674892c229dbf977b80a8e_onEachFeature,
+            
+                style: geo_json_619afb63a2674892c229dbf977b80a8e_styler,
+        });
+
+        function geo_json_619afb63a2674892c229dbf977b80a8e_add (data) {
+            geo_json_619afb63a2674892c229dbf977b80a8e
+                .addData(data);
+        }
+            geo_json_619afb63a2674892c229dbf977b80a8e_add({"features": [{"geometry": {"coordinates": [[[-60.693148, -32.94064], [-60.693103, -32.940474], [-60.692939, -32.940112], [-60.692946, -32.93945], [-60.69304, -32.9367], [-60.693044, -32.936582], [-60.692351, -32.936708], [-60.689002, -32.937308], [-60.684298, -32.938146], [-60.679127, -32.93906], [-60.679078, -32.939085], [-60.677062, -32.939461], [-60.670976, -32.940537], [-60.669961, -32.940725], [-60.666889, -32.941264], [-60.669635, -32.952137], [-60.671978, -32.951718], [-60.67659, -32.950891], [-60.680721, -32.950154], [-60.686457, -32.949127], [-60.692264, -32.948079], [-60.692491, -32.948044], [-60.692933, -32.948054], [-60.692938, -32.947894], [-60.692977, -32.946838], [-60.693021, -32.945555], [-60.693057, -32.944328], [-60.693096, -32.94322], [-60.693131, -32.941848], [-60.693148, -32.94064]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_17bcdf32f884b1ba8cb5dcd221b1e0dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b98768810d9add5bc1ee17ce6552933 = $(`<div id="html_4b98768810d9add5bc1ee17ce6552933" style="width: 100.0%; height: 100.0%;">Barrio: ECHESORTU</div>`)[0];
+                popup_17bcdf32f884b1ba8cb5dcd221b1e0dd.setContent(html_4b98768810d9add5bc1ee17ce6552933);
+            
+        
+
+        geo_json_619afb63a2674892c229dbf977b80a8e.bindPopup(popup_17bcdf32f884b1ba8cb5dcd221b1e0dd)
+        ;
+
+        
+    
+    
+            geo_json_619afb63a2674892c229dbf977b80a8e.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_b7cba4e5aa8897edec32fd62051c5539_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_b7cba4e5aa8897edec32fd62051c5539_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b7cba4e5aa8897edec32fd62051c5539 = L.geoJson(null, {
+                onEachFeature: geo_json_b7cba4e5aa8897edec32fd62051c5539_onEachFeature,
+            
+                style: geo_json_b7cba4e5aa8897edec32fd62051c5539_styler,
+        });
+
+        function geo_json_b7cba4e5aa8897edec32fd62051c5539_add (data) {
+            geo_json_b7cba4e5aa8897edec32fd62051c5539
+                .addData(data);
+        }
+            geo_json_b7cba4e5aa8897edec32fd62051c5539_add({"features": [{"geometry": {"coordinates": [[[-60.648072, -32.997069], [-60.647587, -32.994789], [-60.647403, -32.993943], [-60.646011, -32.98754], [-60.645736, -32.986282], [-60.644856, -32.982114], [-60.644347, -32.979436], [-60.643595, -32.979568], [-60.636041, -32.980918], [-60.635462, -32.981027], [-60.635348, -32.981086], [-60.634817, -32.981069], [-60.634697, -32.981154], [-60.632762, -32.981496], [-60.630148, -32.981964], [-60.630176, -32.982076], [-60.628956, -32.982297], [-60.628017, -32.982346], [-60.628129, -32.984261], [-60.628234, -32.985943], [-60.628434, -32.989434], [-60.628468, -32.9901], [-60.628502, -32.990533], [-60.628553, -32.991377], [-60.628622, -32.992627], [-60.628686, -32.993787], [-60.628746, -32.994883], [-60.628836, -32.996404], [-60.628839, -32.996479], [-60.633288, -32.996617], [-60.639234, -32.996798], [-60.640593, -32.996839], [-60.644532, -32.996962], [-60.64779, -32.99706], [-60.648072, -32.997069]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_c951c9328797e2a0e4176bedd786acc6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1218addd56a8b9fa0f8ab3f714483d18 = $(`<div id="html_1218addd56a8b9fa0f8ab3f714483d18" style="width: 100.0%; height: 100.0%;">Barrio: GENERAL LAS HERAS</div>`)[0];
+                popup_c951c9328797e2a0e4176bedd786acc6.setContent(html_1218addd56a8b9fa0f8ab3f714483d18);
+            
+        
+
+        geo_json_b7cba4e5aa8897edec32fd62051c5539.bindPopup(popup_c951c9328797e2a0e4176bedd786acc6)
+        ;
+
+        
+    
+    
+            geo_json_b7cba4e5aa8897edec32fd62051c5539.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_f8c956f9c2e12d912a4a4dd95838c346_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_f8c956f9c2e12d912a4a4dd95838c346_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f8c956f9c2e12d912a4a4dd95838c346 = L.geoJson(null, {
+                onEachFeature: geo_json_f8c956f9c2e12d912a4a4dd95838c346_onEachFeature,
+            
+                style: geo_json_f8c956f9c2e12d912a4a4dd95838c346_styler,
+        });
+
+        function geo_json_f8c956f9c2e12d912a4a4dd95838c346_add (data) {
+            geo_json_f8c956f9c2e12d912a4a4dd95838c346
+                .addData(data);
+        }
+            geo_json_f8c956f9c2e12d912a4a4dd95838c346_add({"features": [{"geometry": {"coordinates": [[[-60.703919, -32.927338], [-60.702857, -32.927303], [-60.697438, -32.927153], [-60.693353, -32.927046], [-60.693178, -32.927039], [-60.689711, -32.926933], [-60.682751, -32.926753], [-60.677753, -32.926628], [-60.677408, -32.926616], [-60.676543, -32.926589], [-60.676282, -32.926933], [-60.674301, -32.929342], [-60.673695, -32.930149], [-60.671565, -32.93283], [-60.671145, -32.933371], [-60.677723, -32.933617], [-60.678425, -32.936339], [-60.679127, -32.93906], [-60.684298, -32.938146], [-60.689002, -32.937308], [-60.692351, -32.936708], [-60.693044, -32.936582], [-60.694962, -32.936238], [-60.699073, -32.935489], [-60.702051, -32.934953], [-60.703644, -32.934665], [-60.70375, -32.932062], [-60.703828, -32.930182], [-60.703899, -32.927858], [-60.703919, -32.927338]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_eb5bbeb86bc0583d7680dfe79a9cb5cd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7f25a1e580c2ac59f5347526abe73111 = $(`<div id="html_7f25a1e580c2ac59f5347526abe73111" style="width: 100.0%; height: 100.0%;">Barrio: LUDUEÑA SUR Y NORTE</div>`)[0];
+                popup_eb5bbeb86bc0583d7680dfe79a9cb5cd.setContent(html_7f25a1e580c2ac59f5347526abe73111);
+            
+        
+
+        geo_json_f8c956f9c2e12d912a4a4dd95838c346.bindPopup(popup_eb5bbeb86bc0583d7680dfe79a9cb5cd)
+        ;
+
+        
+    
+    
+            geo_json_f8c956f9c2e12d912a4a4dd95838c346.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_0f2a10e07a524b2958308891f2d52dd6_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_0f2a10e07a524b2958308891f2d52dd6_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0f2a10e07a524b2958308891f2d52dd6 = L.geoJson(null, {
+                onEachFeature: geo_json_0f2a10e07a524b2958308891f2d52dd6_onEachFeature,
+            
+                style: geo_json_0f2a10e07a524b2958308891f2d52dd6_styler,
+        });
+
+        function geo_json_0f2a10e07a524b2958308891f2d52dd6_add (data) {
+            geo_json_0f2a10e07a524b2958308891f2d52dd6
+                .addData(data);
+        }
+            geo_json_0f2a10e07a524b2958308891f2d52dd6_add({"features": [{"geometry": {"coordinates": [[[-60.693544, -32.921278], [-60.691807, -32.921191], [-60.68773, -32.921064], [-60.687152, -32.921008], [-60.686142, -32.920977], [-60.681762, -32.920847], [-60.681147, -32.920832], [-60.680889, -32.920875], [-60.679732, -32.920832], [-60.679038, -32.920813], [-60.674428, -32.920666], [-60.673675, -32.920644], [-60.668834, -32.920484], [-60.668776, -32.92043], [-60.667366, -32.920395], [-60.666351, -32.920495], [-60.664453, -32.921718], [-60.662966, -32.922703], [-60.661861, -32.923577], [-60.6599, -32.924957], [-60.658063, -32.925716], [-60.657212, -32.926093], [-60.657026, -32.92637], [-60.656513, -32.9265], [-60.656089, -32.926895], [-60.655425, -32.927047], [-60.652616, -32.928226], [-60.651613, -32.928444], [-60.650251, -32.92929], [-60.648306, -32.930435], [-60.648736, -32.930514], [-60.650039, -32.930542], [-60.6501, -32.930865], [-60.650119, -32.930847], [-60.650282, -32.930779], [-60.650807, -32.930524], [-60.650858, -32.9307], [-60.653646, -32.930765], [-60.653643, -32.930827], [-60.653974, -32.930938], [-60.654304, -32.930975], [-60.654388, -32.93088], [-60.656812, -32.930948], [-60.657982, -32.930983], [-60.660072, -32.931042], [-60.660095, -32.931146], [-60.660187, -32.931152], [-60.660692, -32.931174], [-60.661456, -32.931193], [-60.661969, -32.931205], [-60.663166, -32.931245], [-60.664034, -32.931528], [-60.665058, -32.931867], [-60.665491, -32.932006], [-60.666141, -32.932217], [-60.667257, -32.932584], [-60.667695, -32.932734], [-60.667891, -32.932798], [-60.668621, -32.932993], [-60.669167, -32.933087], [-60.670462, -32.933225], [-60.670493, -32.933331], [-60.670579, -32.933316], [-60.671145, -32.933371], [-60.671565, -32.93283], [-60.673695, -32.930149], [-60.674301, -32.929342], [-60.676282, -32.926933], [-60.676543, -32.926589], [-60.677408, -32.926616], [-60.677753, -32.926628], [-60.682751, -32.926753], [-60.689711, -32.926933], [-60.693178, -32.927039], [-60.693353, -32.927046], [-60.693411, -32.925525], [-60.693458, -32.923728], [-60.693476, -32.923143], [-60.693509, -32.922503], [-60.693526, -32.922341], [-60.693515, -32.922021], [-60.693514, -32.921859], [-60.693544, -32.921278]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_ac3ce68a4cc67d2068584de52e3f4644 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c9e9ac682ee001b68caf25a31fe76853 = $(`<div id="html_c9e9ac682ee001b68caf25a31fe76853" style="width: 100.0%; height: 100.0%;">Barrio: LAS MALVINAS</div>`)[0];
+                popup_ac3ce68a4cc67d2068584de52e3f4644.setContent(html_c9e9ac682ee001b68caf25a31fe76853);
+            
+        
+
+        geo_json_0f2a10e07a524b2958308891f2d52dd6.bindPopup(popup_ac3ce68a4cc67d2068584de52e3f4644)
+        ;
+
+        
+    
+    
+            geo_json_0f2a10e07a524b2958308891f2d52dd6.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_578887cfd433b282ec8a92e8c6c20668_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_578887cfd433b282ec8a92e8c6c20668_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_578887cfd433b282ec8a92e8c6c20668 = L.geoJson(null, {
+                onEachFeature: geo_json_578887cfd433b282ec8a92e8c6c20668_onEachFeature,
+            
+                style: geo_json_578887cfd433b282ec8a92e8c6c20668_styler,
+        });
+
+        function geo_json_578887cfd433b282ec8a92e8c6c20668_add (data) {
+            geo_json_578887cfd433b282ec8a92e8c6c20668
+                .addData(data);
+        }
+            geo_json_578887cfd433b282ec8a92e8c6c20668_add({"features": [{"geometry": {"coordinates": [[[-60.644347, -32.979436], [-60.644126, -32.978269], [-60.64415, -32.977847], [-60.644318, -32.977238], [-60.64431, -32.977029], [-60.643735, -32.974757], [-60.643236, -32.972738], [-60.642804, -32.971049], [-60.642297, -32.969026], [-60.642004, -32.967869], [-60.640826, -32.968078], [-60.633578, -32.969371], [-60.622862, -32.971285], [-60.621844, -32.971471], [-60.619516, -32.971875], [-60.617807, -32.971804], [-60.617589, -32.971798], [-60.617255, -32.975029], [-60.6172, -32.976614], [-60.617063, -32.981418], [-60.616951, -32.983423], [-60.616531, -32.984348], [-60.616774, -32.984307], [-60.623752, -32.98308], [-60.624841, -32.982755], [-60.625878, -32.982581], [-60.626371, -32.982668], [-60.628017, -32.982346], [-60.628956, -32.982297], [-60.630176, -32.982076], [-60.630148, -32.981964], [-60.632762, -32.981496], [-60.634697, -32.981154], [-60.634817, -32.981069], [-60.635348, -32.981086], [-60.635462, -32.981027], [-60.636041, -32.980918], [-60.643595, -32.979568], [-60.644347, -32.979436]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_fb4065a4b937c0d6f9d256950571102a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c2314ee94e5b77888a386f5f7a1fcfbe = $(`<div id="html_c2314ee94e5b77888a386f5f7a1fcfbe" style="width: 100.0%; height: 100.0%;">Barrio: GENERAL JOSE DE SAN MARTIN</div>`)[0];
+                popup_fb4065a4b937c0d6f9d256950571102a.setContent(html_c2314ee94e5b77888a386f5f7a1fcfbe);
+            
+        
+
+        geo_json_578887cfd433b282ec8a92e8c6c20668.bindPopup(popup_fb4065a4b937c0d6f9d256950571102a)
+        ;
+
+        
+    
+    
+            geo_json_578887cfd433b282ec8a92e8c6c20668.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_6754b55f82d9cfe06f2411a8263c8893_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_6754b55f82d9cfe06f2411a8263c8893_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6754b55f82d9cfe06f2411a8263c8893 = L.geoJson(null, {
+                onEachFeature: geo_json_6754b55f82d9cfe06f2411a8263c8893_onEachFeature,
+            
+                style: geo_json_6754b55f82d9cfe06f2411a8263c8893_styler,
+        });
+
+        function geo_json_6754b55f82d9cfe06f2411a8263c8893_add (data) {
+            geo_json_6754b55f82d9cfe06f2411a8263c8893
+                .addData(data);
+        }
+            geo_json_6754b55f82d9cfe06f2411a8263c8893_add({"features": [{"geometry": {"coordinates": [[[-60.707457, -32.904888], [-60.707103, -32.904809], [-60.704613, -32.904273], [-60.702575, -32.903838], [-60.698552, -32.902977], [-60.694935, -32.9022], [-60.688181, -32.900726], [-60.68304, -32.899624], [-60.681175, -32.899481], [-60.679154, -32.900401], [-60.677681, -32.90307], [-60.67725, -32.903708], [-60.676719, -32.903868], [-60.67627, -32.90494], [-60.676026, -32.906423], [-60.675435, -32.907035], [-60.675097, -32.907529], [-60.675073, -32.907999], [-60.674798, -32.908345], [-60.674725, -32.908573], [-60.674465, -32.909785], [-60.674175, -32.910625], [-60.673757, -32.911377], [-60.672881, -32.911765], [-60.672577, -32.91208], [-60.672266, -32.912599], [-60.672113, -32.913084], [-60.672109, -32.91314], [-60.672227, -32.91314], [-60.67275, -32.913156], [-60.672886, -32.913157], [-60.672969, -32.912971], [-60.673043, -32.91286], [-60.673146, -32.912723], [-60.673319, -32.912546], [-60.673514, -32.912405], [-60.673672, -32.912311], [-60.674003, -32.912172], [-60.674329, -32.912098], [-60.674681, -32.912078], [-60.675425, -32.912094], [-60.675406, -32.912619], [-60.675401, -32.912751], [-60.676498, -32.912779], [-60.67886, -32.912843], [-60.68382, -32.912984], [-60.687852, -32.913094], [-60.689716, -32.913148], [-60.691129, -32.913193], [-60.691679, -32.913209], [-60.692002, -32.913113], [-60.692191, -32.913165], [-60.692294, -32.913219], [-60.692359, -32.913219], [-60.692647, -32.91326], [-60.692681, -32.913161], [-60.692537, -32.913088], [-60.692652, -32.912798], [-60.693101, -32.912812], [-60.693175, -32.912811], [-60.693321, -32.913039], [-60.693508, -32.91343], [-60.693612, -32.913697], [-60.693668, -32.913911], [-60.693773, -32.91434], [-60.694074, -32.914346], [-60.694088, -32.91419], [-60.694179, -32.913984], [-60.694278, -32.913781], [-60.69443, -32.913572], [-60.694601, -32.913413], [-60.694795, -32.913299], [-60.69535, -32.913317], [-60.69709, -32.913366], [-60.699019, -32.913407], [-60.699577, -32.912989], [-60.703547, -32.909428], [-60.705085, -32.908037], [-60.707182, -32.906248], [-60.706572, -32.905928], [-60.707339, -32.905263], [-60.707457, -32.904888]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_9ce5caa0f4026f9c3bfeb51f50385571 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3b3a3a1370ff343ea7191a314aab3b97 = $(`<div id="html_3b3a3a1370ff343ea7191a314aab3b97" style="width: 100.0%; height: 100.0%;">Barrio: SARMIENTO</div>`)[0];
+                popup_9ce5caa0f4026f9c3bfeb51f50385571.setContent(html_3b3a3a1370ff343ea7191a314aab3b97);
+            
+        
+
+        geo_json_6754b55f82d9cfe06f2411a8263c8893.bindPopup(popup_9ce5caa0f4026f9c3bfeb51f50385571)
+        ;
+
+        
+    
+    
+            geo_json_6754b55f82d9cfe06f2411a8263c8893.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_6bce8db2578daa2e46b4b43891704e66_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_6bce8db2578daa2e46b4b43891704e66_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6bce8db2578daa2e46b4b43891704e66 = L.geoJson(null, {
+                onEachFeature: geo_json_6bce8db2578daa2e46b4b43891704e66_onEachFeature,
+            
+                style: geo_json_6bce8db2578daa2e46b4b43891704e66_styler,
+        });
+
+        function geo_json_6bce8db2578daa2e46b4b43891704e66_add (data) {
+            geo_json_6bce8db2578daa2e46b4b43891704e66
+                .addData(data);
+        }
+            geo_json_6bce8db2578daa2e46b4b43891704e66_add({"features": [{"geometry": {"coordinates": [[[-60.723386, -32.928015], [-60.72132, -32.928224], [-60.721256, -32.928214], [-60.721251, -32.928312], [-60.718106, -32.928658], [-60.713133, -32.929202], [-60.712581, -32.929258], [-60.711911, -32.929249], [-60.711081, -32.929253], [-60.710732, -32.929379], [-60.707543, -32.929739], [-60.707333, -32.929756], [-60.706728, -32.929814], [-60.706731, -32.92985], [-60.706442, -32.929887], [-60.704136, -32.93015], [-60.703828, -32.930182], [-60.70375, -32.932062], [-60.703644, -32.934665], [-60.703608, -32.935327], [-60.703503, -32.937465], [-60.70347, -32.937958], [-60.70336, -32.940012], [-60.703158, -32.944529], [-60.703026, -32.947315], [-60.702951, -32.949292], [-60.702943, -32.949527], [-60.704224, -32.949553], [-60.709693, -32.949712], [-60.712205, -32.949775], [-60.714859, -32.94985], [-60.717682, -32.949917], [-60.717992, -32.949927], [-60.720307, -32.949992], [-60.722016, -32.950053], [-60.722073, -32.949061], [-60.722534, -32.941097], [-60.722836, -32.934313], [-60.722925, -32.932285], [-60.723022, -32.931167], [-60.723386, -32.928015]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_29f199419dc3c6cdaa085dc4b3e73600 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0865225b5f0ca21d16b8de7f12373520 = $(`<div id="html_0865225b5f0ca21d16b8de7f12373520" style="width: 100.0%; height: 100.0%;">Barrio: BELGRANO</div>`)[0];
+                popup_29f199419dc3c6cdaa085dc4b3e73600.setContent(html_0865225b5f0ca21d16b8de7f12373520);
+            
+        
+
+        geo_json_6bce8db2578daa2e46b4b43891704e66.bindPopup(popup_29f199419dc3c6cdaa085dc4b3e73600)
+        ;
+
+        
+    
+    
+            geo_json_6bce8db2578daa2e46b4b43891704e66.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_1650d3d6e178e616cb6f67f3a1aa5d40_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_1650d3d6e178e616cb6f67f3a1aa5d40_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_1650d3d6e178e616cb6f67f3a1aa5d40 = L.geoJson(null, {
+                onEachFeature: geo_json_1650d3d6e178e616cb6f67f3a1aa5d40_onEachFeature,
+            
+                style: geo_json_1650d3d6e178e616cb6f67f3a1aa5d40_styler,
+        });
+
+        function geo_json_1650d3d6e178e616cb6f67f3a1aa5d40_add (data) {
+            geo_json_1650d3d6e178e616cb6f67f3a1aa5d40
+                .addData(data);
+        }
+            geo_json_1650d3d6e178e616cb6f67f3a1aa5d40_add({"features": [{"geometry": {"coordinates": [[[-60.654173, -33.025318], [-60.650593, -33.008884], [-60.650351, -33.007673], [-60.650025, -33.006162], [-60.649637, -33.00438], [-60.649264, -33.002589], [-60.648847, -33.00067], [-60.648606, -32.999543], [-60.648264, -32.997958], [-60.648092, -32.997166], [-60.648072, -32.997069], [-60.64779, -32.99706], [-60.644532, -32.996962], [-60.640593, -32.996839], [-60.639234, -32.996798], [-60.633288, -32.996617], [-60.628839, -32.996479], [-60.622325, -32.99627], [-60.620348, -32.996209], [-60.620214, -32.996144], [-60.620093, -32.996329], [-60.619839, -32.996644], [-60.620041, -32.996746], [-60.620496, -32.997035], [-60.620607, -32.997066], [-60.621203, -32.996853], [-60.621477, -32.99731], [-60.621397, -32.997752], [-60.622249, -32.997893], [-60.622472, -32.998827], [-60.622693, -32.999038], [-60.62289, -32.999149], [-60.623201, -32.999229], [-60.623493, -32.999235], [-60.624123, -32.999189], [-60.624303, -32.999489], [-60.624445, -32.99958], [-60.624606, -32.999792], [-60.624654, -33.000073], [-60.624687, -33.00023], [-60.624571, -33.000609], [-60.62411, -33.001331], [-60.624633, -33.002216], [-60.624322, -33.002205], [-60.622683, -33.002153], [-60.620693, -33.002088], [-60.620628, -33.001985], [-60.620351, -33.002103], [-60.620203, -33.0021], [-60.62003, -33.002175], [-60.619982, -33.002137], [-60.619903, -33.002154], [-60.61987, -33.002453], [-60.62049, -33.00394], [-60.620957, -33.004793], [-60.621971, -33.004686], [-60.623517, -33.004437], [-60.624941, -33.004789], [-60.625142, -33.004577], [-60.625808, -33.004699], [-60.626168, -33.004874], [-60.62779, -33.006251], [-60.629238, -33.00743], [-60.630434, -33.008412], [-60.631748, -33.009161], [-60.632836, -33.010295], [-60.63355, -33.011053], [-60.633432, -33.012619], [-60.634282, -33.014188], [-60.634967, -33.014505], [-60.635124, -33.014496], [-60.635285, -33.013707], [-60.637528, -33.015364], [-60.637502, -33.01552], [-60.637234, -33.017323], [-60.637788, -33.017413], [-60.638678, -33.018002], [-60.639197, -33.018155], [-60.639564, -33.017935], [-60.642412, -33.018669], [-60.643853, -33.018724], [-60.644041, -33.019191], [-60.646081, -33.020522], [-60.649528, -33.022777], [-60.651118, -33.023143], [-60.654173, -33.025318]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_8a8cae819fc8509ce1db41e79e13a5ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e4bb3c2b66e957826d24f4308a35f5c7 = $(`<div id="html_e4bb3c2b66e957826d24f4308a35f5c7" style="width: 100.0%; height: 100.0%;">Barrio: ROQUE SAENZ PEÑA</div>`)[0];
+                popup_8a8cae819fc8509ce1db41e79e13a5ee.setContent(html_e4bb3c2b66e957826d24f4308a35f5c7);
+            
+        
+
+        geo_json_1650d3d6e178e616cb6f67f3a1aa5d40.bindPopup(popup_8a8cae819fc8509ce1db41e79e13a5ee)
+        ;
+
+        
+    
+    
+            geo_json_1650d3d6e178e616cb6f67f3a1aa5d40.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_a2d37fe602e27e794e6fc3c48b343e30_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_a2d37fe602e27e794e6fc3c48b343e30_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a2d37fe602e27e794e6fc3c48b343e30 = L.geoJson(null, {
+                onEachFeature: geo_json_a2d37fe602e27e794e6fc3c48b343e30_onEachFeature,
+            
+                style: geo_json_a2d37fe602e27e794e6fc3c48b343e30_styler,
+        });
+
+        function geo_json_a2d37fe602e27e794e6fc3c48b343e30_add (data) {
+            geo_json_a2d37fe602e27e794e6fc3c48b343e30
+                .addData(data);
+        }
+            geo_json_a2d37fe602e27e794e6fc3c48b343e30_add({"features": [{"geometry": {"coordinates": [[[-60.720781, -32.894662], [-60.720138, -32.893886], [-60.719858, -32.893537], [-60.71932, -32.89372], [-60.718268, -32.893953], [-60.713197, -32.893794], [-60.708025, -32.893628], [-60.707988, -32.893873], [-60.706307, -32.893818], [-60.70523, -32.893787], [-60.703365, -32.8937], [-60.703175, -32.89369], [-60.699529, -32.89289], [-60.699301, -32.89284], [-60.699324, -32.892778], [-60.699635, -32.891899], [-60.699959, -32.891036], [-60.700262, -32.890169], [-60.700581, -32.889142], [-60.700734, -32.889034], [-60.70158, -32.886544], [-60.701513, -32.886444], [-60.701558, -32.886274], [-60.701608, -32.886163], [-60.701742, -32.885778], [-60.701797, -32.88565], [-60.701912, -32.885275], [-60.701954, -32.885149], [-60.702083, -32.884771], [-60.702149, -32.88459], [-60.702278, -32.884209], [-60.702324, -32.884084], [-60.702455, -32.883705], [-60.702492, -32.88356], [-60.702538, -32.883429], [-60.702697, -32.883286], [-60.702983, -32.882524], [-60.704936, -32.876867], [-60.704183, -32.877243], [-60.703224, -32.87704], [-60.702563, -32.87689], [-60.702663, -32.876519], [-60.701576, -32.876288], [-60.701378, -32.876245], [-60.701402, -32.87617], [-60.698349, -32.875523], [-60.698207, -32.875491], [-60.697881, -32.876561], [-60.696895, -32.879843], [-60.696401, -32.881438], [-60.696265, -32.881876], [-60.695882, -32.883151], [-60.694112, -32.883065], [-60.691332, -32.882948], [-60.689675, -32.88288], [-60.688162, -32.882816], [-60.68798, -32.882806], [-60.68747, -32.882793], [-60.686393, -32.882842], [-60.686276, -32.887687], [-60.684536, -32.891875], [-60.684178, -32.892851], [-60.682896, -32.892752], [-60.680849, -32.897694], [-60.681175, -32.899481], [-60.68304, -32.899624], [-60.688181, -32.900726], [-60.694935, -32.9022], [-60.698552, -32.902977], [-60.702575, -32.903838], [-60.704613, -32.904273], [-60.707103, -32.904809], [-60.707457, -32.904888], [-60.707339, -32.905263], [-60.706572, -32.905928], [-60.707182, -32.906248], [-60.712405, -32.901792], [-60.71328, -32.901043], [-60.713421, -32.900923], [-60.716571, -32.89823], [-60.716906, -32.897942], [-60.719656, -32.895582], [-60.720619, -32.894758], [-60.720781, -32.894662]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_effeff0c455b14c418d49b7528e09c93 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3c6f554dfdc020c9b99edc72cef319a1 = $(`<div id="html_3c6f554dfdc020c9b99edc72cef319a1" style="width: 100.0%; height: 100.0%;">Barrio: ALBERDI</div>`)[0];
+                popup_effeff0c455b14c418d49b7528e09c93.setContent(html_3c6f554dfdc020c9b99edc72cef319a1);
+            
+        
+
+        geo_json_a2d37fe602e27e794e6fc3c48b343e30.bindPopup(popup_effeff0c455b14c418d49b7528e09c93)
+        ;
+
+        
+    
+    
+            geo_json_a2d37fe602e27e794e6fc3c48b343e30.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_9b2a8dfc3c91ed0a332d59867d631680_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_9b2a8dfc3c91ed0a332d59867d631680_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9b2a8dfc3c91ed0a332d59867d631680 = L.geoJson(null, {
+                onEachFeature: geo_json_9b2a8dfc3c91ed0a332d59867d631680_onEachFeature,
+            
+                style: geo_json_9b2a8dfc3c91ed0a332d59867d631680_styler,
+        });
+
+        function geo_json_9b2a8dfc3c91ed0a332d59867d631680_add (data) {
+            geo_json_9b2a8dfc3c91ed0a332d59867d631680
+                .addData(data);
+        }
+            geo_json_9b2a8dfc3c91ed0a332d59867d631680_add({"features": [{"geometry": {"coordinates": [[[-60.690298, -32.971211], [-60.68739, -32.971722], [-60.68163, -32.972761], [-60.674396, -32.974062], [-60.673759, -32.974174], [-60.674046, -32.975315], [-60.672685, -32.975557], [-60.672987, -32.976707], [-60.67162, -32.976962], [-60.671902, -32.978101], [-60.670229, -32.978401], [-60.670508, -32.979545], [-60.669481, -32.979728], [-60.669565, -32.980058], [-60.669492, -32.980174], [-60.669018, -32.980931], [-60.668905, -32.98111], [-60.668467, -32.98181], [-60.666698, -32.98469], [-60.665914, -32.985863], [-60.66565, -32.986416], [-60.664506, -32.988102], [-60.665341, -32.991387], [-60.665369, -32.992077], [-60.665293, -32.994496], [-60.661305, -32.994389], [-60.660574, -32.994065], [-60.660399, -32.994352], [-60.660035, -32.994886], [-60.659242, -32.996094], [-60.658373, -32.997397], [-60.661996, -32.997508], [-60.66219, -32.997515], [-60.662232, -32.996287], [-60.663237, -32.996316], [-60.663235, -32.996421], [-60.663225, -32.996666], [-60.66353, -32.996674], [-60.66369, -32.996679], [-60.66418, -32.99669], [-60.664275, -32.996694], [-60.664236, -32.997473], [-60.664231, -32.997578], [-60.671985, -32.997808], [-60.674692, -32.997896], [-60.674901, -32.997847], [-60.677657, -32.99792], [-60.682936, -32.998075], [-60.687725, -32.998212], [-60.689038, -32.998252], [-60.688982, -32.995174], [-60.688832, -32.992471], [-60.688822, -32.991931], [-60.689438, -32.991945], [-60.689435, -32.991879], [-60.689407, -32.991703], [-60.689512, -32.987687], [-60.689545, -32.986592], [-60.689571, -32.982671], [-60.689811, -32.982441], [-60.689636, -32.978399], [-60.689548, -32.976373], [-60.689641, -32.975106], [-60.689153, -32.975082], [-60.688726, -32.975087], [-60.688773, -32.974974], [-60.689219, -32.973868], [-60.689506, -32.973161], [-60.690047, -32.971828], [-60.690298, -32.971211]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_0dd5107e0cb60eccd3c7cc38e25b349f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa6bcc9e1cc7d21b1bffc9ea1772122c = $(`<div id="html_fa6bcc9e1cc7d21b1bffc9ea1772122c" style="width: 100.0%; height: 100.0%;">Barrio: ALVEAR</div>`)[0];
+                popup_0dd5107e0cb60eccd3c7cc38e25b349f.setContent(html_fa6bcc9e1cc7d21b1bffc9ea1772122c);
+            
+        
+
+        geo_json_9b2a8dfc3c91ed0a332d59867d631680.bindPopup(popup_0dd5107e0cb60eccd3c7cc38e25b349f)
+        ;
+
+        
+    
+    
+            geo_json_9b2a8dfc3c91ed0a332d59867d631680.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_0bf190cde6dfabce19cd3c45aa2a290e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_0bf190cde6dfabce19cd3c45aa2a290e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0bf190cde6dfabce19cd3c45aa2a290e = L.geoJson(null, {
+                onEachFeature: geo_json_0bf190cde6dfabce19cd3c45aa2a290e_onEachFeature,
+            
+                style: geo_json_0bf190cde6dfabce19cd3c45aa2a290e_styler,
+        });
+
+        function geo_json_0bf190cde6dfabce19cd3c45aa2a290e_add (data) {
+            geo_json_0bf190cde6dfabce19cd3c45aa2a290e
+                .addData(data);
+        }
+            geo_json_0bf190cde6dfabce19cd3c45aa2a290e_add({"features": [{"geometry": {"coordinates": [[[-60.711493, -32.96794], [-60.710993, -32.967692], [-60.708613, -32.966492], [-60.702707, -32.963527], [-60.698668, -32.961501], [-60.693167, -32.958738], [-60.69303, -32.958667], [-60.692478, -32.958611], [-60.692333, -32.958778], [-60.692341, -32.959044], [-60.692225, -32.962667], [-60.6921, -32.966382], [-60.692097, -32.966437], [-60.692008, -32.968943], [-60.6919, -32.969411], [-60.691469, -32.970465], [-60.691327, -32.970459], [-60.691117, -32.970452], [-60.691041, -32.970548], [-60.690318, -32.972303], [-60.690325, -32.972186], [-60.690377, -32.971318], [-60.690298, -32.971211], [-60.690047, -32.971828], [-60.689506, -32.973161], [-60.689219, -32.973868], [-60.688773, -32.974974], [-60.688726, -32.975087], [-60.689153, -32.975082], [-60.689641, -32.975106], [-60.689548, -32.976373], [-60.689636, -32.978399], [-60.689811, -32.982441], [-60.689571, -32.982671], [-60.689545, -32.986592], [-60.689512, -32.987687], [-60.689407, -32.991703], [-60.689435, -32.991879], [-60.69984, -32.992165], [-60.708586, -32.99237], [-60.710373, -32.99241], [-60.710446, -32.989236], [-60.710586, -32.98329], [-60.710912, -32.982741], [-60.711265, -32.978957], [-60.710943, -32.978891], [-60.711088, -32.976928], [-60.711174, -32.97652], [-60.711196, -32.975892], [-60.711312, -32.972485], [-60.711425, -32.969832], [-60.711493, -32.96794]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_9b097824ee63584efe0a544703ce2865 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cf4ae9f860363a38a05e36a9af75b60a = $(`<div id="html_cf4ae9f860363a38a05e36a9af75b60a" style="width: 100.0%; height: 100.0%;">Barrio: TRIANGULO Y MODERNO</div>`)[0];
+                popup_9b097824ee63584efe0a544703ce2865.setContent(html_cf4ae9f860363a38a05e36a9af75b60a);
+            
+        
+
+        geo_json_0bf190cde6dfabce19cd3c45aa2a290e.bindPopup(popup_9b097824ee63584efe0a544703ce2865)
+        ;
+
+        
+    
+    
+            geo_json_0bf190cde6dfabce19cd3c45aa2a290e.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_37f54dd3ac5d83b21658809d175b3756_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_37f54dd3ac5d83b21658809d175b3756_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_37f54dd3ac5d83b21658809d175b3756 = L.geoJson(null, {
+                onEachFeature: geo_json_37f54dd3ac5d83b21658809d175b3756_onEachFeature,
+            
+                style: geo_json_37f54dd3ac5d83b21658809d175b3756_styler,
+        });
+
+        function geo_json_37f54dd3ac5d83b21658809d175b3756_add (data) {
+            geo_json_37f54dd3ac5d83b21658809d175b3756
+                .addData(data);
+        }
+            geo_json_37f54dd3ac5d83b21658809d175b3756_add({"features": [{"geometry": {"coordinates": [[[-60.771226, -32.885299], [-60.766445, -32.88513], [-60.762794, -32.884995], [-60.762704, -32.884957], [-60.760098, -32.884878], [-60.753607, -32.884621], [-60.750654, -32.884502], [-60.747522, -32.884395], [-60.747572, -32.883594], [-60.74767, -32.881545], [-60.747807, -32.879007], [-60.747817, -32.878723], [-60.745551, -32.878631], [-60.744846, -32.878579], [-60.744077, -32.878541], [-60.740928, -32.878405], [-60.738368, -32.878301], [-60.734599, -32.878136], [-60.73151, -32.878004], [-60.731334, -32.880932], [-60.728387, -32.880798], [-60.728239, -32.88359], [-60.720721, -32.883243], [-60.720493, -32.884871], [-60.720489, -32.886794], [-60.71999, -32.886786], [-60.71981, -32.887726], [-60.71979, -32.887913], [-60.719621, -32.888813], [-60.719411, -32.889887], [-60.719358, -32.890155], [-60.719346, -32.890281], [-60.719192, -32.891053], [-60.719052, -32.89166], [-60.719046, -32.891688], [-60.718865, -32.892353], [-60.719248, -32.892824], [-60.719858, -32.893537], [-60.720138, -32.893886], [-60.720781, -32.894662], [-60.721008, -32.894485], [-60.721541, -32.894062], [-60.721832, -32.894015], [-60.721885, -32.893784], [-60.722884, -32.89296], [-60.725558, -32.893033], [-60.7255, -32.894593], [-60.728368, -32.894685], [-60.730678, -32.894742], [-60.734742, -32.894884], [-60.73845, -32.895021], [-60.73848, -32.895066], [-60.739467, -32.895098], [-60.745838, -32.895302], [-60.749548, -32.895426], [-60.75468, -32.895592], [-60.760834, -32.895803], [-60.760834, -32.895752], [-60.76112, -32.895751], [-60.767703, -32.895965], [-60.768192, -32.895987], [-60.768218, -32.895743], [-60.77047, -32.895809], [-60.770704, -32.895706], [-60.770806, -32.894537], [-60.77105, -32.889155], [-60.771068, -32.88832], [-60.771226, -32.885299]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_a0979baeca3632bef4321a0455918813 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0e30dea58baff3198318878acce15158 = $(`<div id="html_0e30dea58baff3198318878acce15158" style="width: 100.0%; height: 100.0%;">Barrio: LA CERAMICA Y CUYO</div>`)[0];
+                popup_a0979baeca3632bef4321a0455918813.setContent(html_0e30dea58baff3198318878acce15158);
+            
+        
+
+        geo_json_37f54dd3ac5d83b21658809d175b3756.bindPopup(popup_a0979baeca3632bef4321a0455918813)
+        ;
+
+        
+    
+    
+            geo_json_37f54dd3ac5d83b21658809d175b3756.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_d34e21f04d1a69d78c7e24f5ac7fcf33_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_d34e21f04d1a69d78c7e24f5ac7fcf33_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d34e21f04d1a69d78c7e24f5ac7fcf33 = L.geoJson(null, {
+                onEachFeature: geo_json_d34e21f04d1a69d78c7e24f5ac7fcf33_onEachFeature,
+            
+                style: geo_json_d34e21f04d1a69d78c7e24f5ac7fcf33_styler,
+        });
+
+        function geo_json_d34e21f04d1a69d78c7e24f5ac7fcf33_add (data) {
+            geo_json_d34e21f04d1a69d78c7e24f5ac7fcf33
+                .addData(data);
+        }
+            geo_json_d34e21f04d1a69d78c7e24f5ac7fcf33_add({"features": [{"geometry": {"coordinates": [[[-60.782771, -32.91508], [-60.775294, -32.914935], [-60.761775, -32.914559], [-60.755754, -32.914414], [-60.749126, -32.914084], [-60.74773, -32.914044], [-60.742175, -32.913887], [-60.739511, -32.913829], [-60.737576, -32.91384], [-60.73024, -32.913646], [-60.729151, -32.913619], [-60.728197, -32.913518], [-60.725647, -32.913458], [-60.725631, -32.91381], [-60.725556, -32.913809], [-60.724791, -32.91379], [-60.723988, -32.91377], [-60.723902, -32.915196], [-60.723793, -32.918284], [-60.723673, -32.921066], [-60.72353, -32.925184], [-60.723386, -32.928015], [-60.723022, -32.931167], [-60.725013, -32.930815], [-60.728361, -32.93021], [-60.729211, -32.930062], [-60.737005, -32.928663], [-60.738936, -32.928307], [-60.739927, -32.928018], [-60.742807, -32.927152], [-60.743333, -32.92701], [-60.744173, -32.926976], [-60.745145, -32.926937], [-60.747496, -32.926913], [-60.748404, -32.926816], [-60.751324, -32.926516], [-60.753585, -32.926287], [-60.759463, -32.925695], [-60.763002, -32.925318], [-60.76287, -32.925126], [-60.761849, -32.923932], [-60.767342, -32.923339], [-60.767361, -32.923274], [-60.776609, -32.922397], [-60.776615, -32.922278], [-60.778911, -32.91961], [-60.778966, -32.919518], [-60.7793, -32.919138], [-60.779527, -32.918897], [-60.782269, -32.915677], [-60.782771, -32.91508]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_f897d9019b62935b5e18470f2b0c1044 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6f0c4b5f4eade2d09dd5d947a229e09c = $(`<div id="html_6f0c4b5f4eade2d09dd5d947a229e09c" style="width: 100.0%; height: 100.0%;">Barrio: FISHERTON</div>`)[0];
+                popup_f897d9019b62935b5e18470f2b0c1044.setContent(html_6f0c4b5f4eade2d09dd5d947a229e09c);
+            
+        
+
+        geo_json_d34e21f04d1a69d78c7e24f5ac7fcf33.bindPopup(popup_f897d9019b62935b5e18470f2b0c1044)
+        ;
+
+        
+    
+    
+            geo_json_d34e21f04d1a69d78c7e24f5ac7fcf33.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_353904e9d701e1f8fc48cab0af59bac9_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_353904e9d701e1f8fc48cab0af59bac9_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_353904e9d701e1f8fc48cab0af59bac9 = L.geoJson(null, {
+                onEachFeature: geo_json_353904e9d701e1f8fc48cab0af59bac9_onEachFeature,
+            
+                style: geo_json_353904e9d701e1f8fc48cab0af59bac9_styler,
+        });
+
+        function geo_json_353904e9d701e1f8fc48cab0af59bac9_add (data) {
+            geo_json_353904e9d701e1f8fc48cab0af59bac9
+                .addData(data);
+        }
+            geo_json_353904e9d701e1f8fc48cab0af59bac9_add({"features": [{"geometry": {"coordinates": [[[-60.672241, -32.962451], [-60.671541, -32.959652], [-60.671384, -32.959037], [-60.670937, -32.957314], [-60.670622, -32.956054], [-60.670419, -32.955231], [-60.669635, -32.952137], [-60.656048, -32.954596], [-60.653294, -32.943702], [-60.652112, -32.939001], [-60.650183, -32.931304], [-60.6501, -32.930865], [-60.650039, -32.930542], [-60.648736, -32.930514], [-60.648306, -32.930435], [-60.646641, -32.931284], [-60.639061, -32.936048], [-60.638061, -32.936655], [-60.636236, -32.938057], [-60.63403, -32.940101], [-60.632182, -32.941871], [-60.63013, -32.943847], [-60.628114, -32.946064], [-60.626287, -32.948522], [-60.62451, -32.951056], [-60.623026, -32.953588], [-60.622035, -32.955379], [-60.621184, -32.957377], [-60.620269, -32.959618], [-60.619788, -32.960961], [-60.619962, -32.960953], [-60.620906, -32.960798], [-60.621102, -32.960837], [-60.625444, -32.96009], [-60.625525, -32.960041], [-60.626333, -32.959893], [-60.633791, -32.958572], [-60.639082, -32.957613], [-60.639414, -32.957553], [-60.654679, -32.95481], [-60.65496, -32.95597], [-60.653594, -32.95621], [-60.655905, -32.96538], [-60.658634, -32.964891], [-60.666581, -32.963463], [-60.671631, -32.962556], [-60.672241, -32.962451]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_da9a0506f85a4b02a350f9ec815b147a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f7918854d9bac18c89d1a1da94488d7f = $(`<div id="html_f7918854d9bac18c89d1a1da94488d7f" style="width: 100.0%; height: 100.0%;">Barrio: CENTRO</div>`)[0];
+                popup_da9a0506f85a4b02a350f9ec815b147a.setContent(html_f7918854d9bac18c89d1a1da94488d7f);
+            
+        
+
+        geo_json_353904e9d701e1f8fc48cab0af59bac9.bindPopup(popup_da9a0506f85a4b02a350f9ec815b147a)
+        ;
+
+        
+    
+    
+            geo_json_353904e9d701e1f8fc48cab0af59bac9.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_14f8e45240f7667f1643e31b6219cc59_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_14f8e45240f7667f1643e31b6219cc59_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_14f8e45240f7667f1643e31b6219cc59 = L.geoJson(null, {
+                onEachFeature: geo_json_14f8e45240f7667f1643e31b6219cc59_onEachFeature,
+            
+                style: geo_json_14f8e45240f7667f1643e31b6219cc59_styler,
+        });
+
+        function geo_json_14f8e45240f7667f1643e31b6219cc59_add (data) {
+            geo_json_14f8e45240f7667f1643e31b6219cc59
+                .addData(data);
+        }
+            geo_json_14f8e45240f7667f1643e31b6219cc59_add({"features": [{"geometry": {"coordinates": [[[-60.781995, -32.874295], [-60.768474, -32.873736], [-60.755073, -32.873213], [-60.747458, -32.872878], [-60.74499, -32.872787], [-60.734678, -32.872323], [-60.724521, -32.871897], [-60.718379, -32.871657], [-60.710284, -32.871348], [-60.7069, -32.871249], [-60.706464, -32.87116], [-60.700482, -32.87097], [-60.699132, -32.870951], [-60.697623, -32.87104], [-60.695599, -32.870973], [-60.694169, -32.870666], [-60.69271, -32.870608], [-60.691536, -32.869406], [-60.690155, -32.86944], [-60.689172, -32.869501], [-60.688143, -32.870108], [-60.688008, -32.870779], [-60.688076, -32.871475], [-60.687922, -32.871673], [-60.68777, -32.871986], [-60.687739, -32.873519], [-60.686603, -32.876949], [-60.686667, -32.878219], [-60.686342, -32.879563], [-60.686393, -32.882842], [-60.68747, -32.882793], [-60.68798, -32.882806], [-60.688162, -32.882816], [-60.689675, -32.88288], [-60.691332, -32.882948], [-60.694112, -32.883065], [-60.695882, -32.883151], [-60.696265, -32.881876], [-60.696401, -32.881438], [-60.696895, -32.879843], [-60.697881, -32.876561], [-60.698207, -32.875491], [-60.698349, -32.875523], [-60.701402, -32.87617], [-60.701378, -32.876245], [-60.701576, -32.876288], [-60.702663, -32.876519], [-60.702563, -32.87689], [-60.703224, -32.87704], [-60.704183, -32.877243], [-60.704936, -32.876867], [-60.70524, -32.876885], [-60.70717, -32.87699], [-60.709304, -32.877076], [-60.713299, -32.877245], [-60.715586, -32.87737], [-60.71995, -32.877509], [-60.721808, -32.87759], [-60.724151, -32.877693], [-60.73151, -32.878004], [-60.734599, -32.878136], [-60.738368, -32.878301], [-60.740928, -32.878405], [-60.744077, -32.878541], [-60.744846, -32.878579], [-60.745551, -32.878631], [-60.747817, -32.878723], [-60.747807, -32.879007], [-60.74767, -32.881545], [-60.747572, -32.883594], [-60.747522, -32.884395], [-60.750654, -32.884502], [-60.753607, -32.884621], [-60.760098, -32.884878], [-60.762704, -32.884957], [-60.762794, -32.884995], [-60.766445, -32.88513], [-60.771226, -32.885299], [-60.776091, -32.885499], [-60.78051, -32.885676], [-60.781209, -32.885704], [-60.781771, -32.877056], [-60.781995, -32.874295]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_fde59d2a8becc57d4b750a6e0033fdbc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d4f4dfada5fddbc5035de93d13546a1 = $(`<div id="html_4d4f4dfada5fddbc5035de93d13546a1" style="width: 100.0%; height: 100.0%;">Barrio: CELEDONIO ESCALADA</div>`)[0];
+                popup_fde59d2a8becc57d4b750a6e0033fdbc.setContent(html_4d4f4dfada5fddbc5035de93d13546a1);
+            
+        
+
+        geo_json_14f8e45240f7667f1643e31b6219cc59.bindPopup(popup_fde59d2a8becc57d4b750a6e0033fdbc)
+        ;
+
+        
+    
+    
+            geo_json_14f8e45240f7667f1643e31b6219cc59.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_4cc384bb30d0aa2e63c03e7bd56ed298_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_4cc384bb30d0aa2e63c03e7bd56ed298_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_4cc384bb30d0aa2e63c03e7bd56ed298 = L.geoJson(null, {
+                onEachFeature: geo_json_4cc384bb30d0aa2e63c03e7bd56ed298_onEachFeature,
+            
+                style: geo_json_4cc384bb30d0aa2e63c03e7bd56ed298_styler,
+        });
+
+        function geo_json_4cc384bb30d0aa2e63c03e7bd56ed298_add (data) {
+            geo_json_4cc384bb30d0aa2e63c03e7bd56ed298
+                .addData(data);
+        }
+            geo_json_4cc384bb30d0aa2e63c03e7bd56ed298_add({"features": [{"geometry": {"coordinates": [[[-60.775532, -32.941078], [-60.775362, -32.940638], [-60.775226, -32.940207], [-60.775141, -32.94], [-60.775051, -32.939819], [-60.774736, -32.939422], [-60.774567, -32.939251], [-60.774432, -32.939146], [-60.77378, -32.938795], [-60.773357, -32.938651], [-60.771807, -32.938158], [-60.770486, -32.937697], [-60.77039, -32.937312], [-60.769358, -32.937289], [-60.769318, -32.93717], [-60.769061, -32.93656], [-60.769701, -32.936573], [-60.768869, -32.935969], [-60.768882, -32.935475], [-60.768844, -32.935132], [-60.768959, -32.934662], [-60.768949, -32.933881], [-60.768471, -32.933174], [-60.768314, -32.932998], [-60.767559, -32.932431], [-60.767349, -32.93226], [-60.767026, -32.932011], [-60.766865, -32.93186], [-60.766395, -32.930997], [-60.766093, -32.930853], [-60.766141, -32.929653], [-60.76597, -32.927873], [-60.765882, -32.927228], [-60.765722, -32.926982], [-60.765371, -32.92682], [-60.764826, -32.926741], [-60.763987, -32.926286], [-60.763283, -32.925731], [-60.763002, -32.925318], [-60.759463, -32.925695], [-60.753585, -32.926287], [-60.751324, -32.926516], [-60.748404, -32.926816], [-60.747496, -32.926913], [-60.745145, -32.926937], [-60.744173, -32.926976], [-60.743333, -32.92701], [-60.742807, -32.927152], [-60.739927, -32.928018], [-60.738936, -32.928307], [-60.737005, -32.928663], [-60.729211, -32.930062], [-60.728361, -32.93021], [-60.725013, -32.930815], [-60.723022, -32.931167], [-60.722925, -32.932285], [-60.722836, -32.934313], [-60.722534, -32.941097], [-60.722073, -32.949061], [-60.735295, -32.949507], [-60.741189, -32.949441], [-60.744265, -32.948973], [-60.749459, -32.948231], [-60.749501, -32.946955], [-60.749529, -32.94598], [-60.749569, -32.944775], [-60.749572, -32.944605], [-60.749971, -32.944615], [-60.750003, -32.943616], [-60.750022, -32.943002], [-60.750047, -32.94224], [-60.750089, -32.940833], [-60.750093, -32.94068], [-60.752074, -32.940721], [-60.752457, -32.94073], [-60.75244, -32.940673], [-60.755019, -32.940732], [-60.75649, -32.940758], [-60.756479, -32.941397], [-60.756443, -32.942775], [-60.756414, -32.943928], [-60.756399, -32.944599], [-60.756392, -32.944763], [-60.756748, -32.944772], [-60.758089, -32.944805], [-60.758062, -32.945313], [-60.758015, -32.946398], [-60.757988, -32.947088], [-60.757944, -32.948007], [-60.757928, -32.948452], [-60.761856, -32.948749], [-60.764413, -32.948815], [-60.777177, -32.949092], [-60.783082, -32.94924], [-60.783544, -32.949045], [-60.783465, -32.948964], [-60.783175, -32.948899], [-60.783042, -32.948744], [-60.78305, -32.948611], [-60.783207, -32.948484], [-60.783425, -32.948386], [-60.783406, -32.948209], [-60.783229, -32.948106], [-60.782193, -32.947683], [-60.78226, -32.94741], [-60.782189, -32.947322], [-60.782169, -32.9471], [-60.781993, -32.94699], [-60.7812, -32.946219], [-60.780822, -32.946051], [-60.779012, -32.945145], [-60.777243, -32.9439], [-60.777075, -32.943731], [-60.776629, -32.943397], [-60.776329, -32.943169], [-60.775994, -32.94286], [-60.775816, -32.942595], [-60.775681, -32.942151], [-60.775582, -32.941774], [-60.775532, -32.941078]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_b52c82cccfd7672db02f3cb38e636532 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0690b49783b96c30397a31364665f82a = $(`<div id="html_0690b49783b96c30397a31364665f82a" style="width: 100.0%; height: 100.0%;">Barrio: ANTARTIDA ARGENTINA</div>`)[0];
+                popup_b52c82cccfd7672db02f3cb38e636532.setContent(html_0690b49783b96c30397a31364665f82a);
+            
+        
+
+        geo_json_4cc384bb30d0aa2e63c03e7bd56ed298.bindPopup(popup_b52c82cccfd7672db02f3cb38e636532)
+        ;
+
+        
+    
+    
+            geo_json_4cc384bb30d0aa2e63c03e7bd56ed298.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_5606657ac90d285037109c4890497231_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_5606657ac90d285037109c4890497231_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_5606657ac90d285037109c4890497231 = L.geoJson(null, {
+                onEachFeature: geo_json_5606657ac90d285037109c4890497231_onEachFeature,
+            
+                style: geo_json_5606657ac90d285037109c4890497231_styler,
+        });
+
+        function geo_json_5606657ac90d285037109c4890497231_add (data) {
+            geo_json_5606657ac90d285037109c4890497231
+                .addData(data);
+        }
+            geo_json_5606657ac90d285037109c4890497231_add({"features": [{"geometry": {"coordinates": [[[-60.761666, -32.95103], [-60.75304, -32.950812], [-60.752209, -32.950794], [-60.752213, -32.950752], [-60.751661, -32.950741], [-60.747069, -32.95064], [-60.742967, -32.950558], [-60.740722, -32.950519], [-60.736549, -32.950449], [-60.735629, -32.950431], [-60.735692, -32.951595], [-60.733449, -32.951541], [-60.732623, -32.951524], [-60.732606, -32.951542], [-60.73197, -32.951531], [-60.730337, -32.95149], [-60.729065, -32.951455], [-60.727774, -32.95141], [-60.724294, -32.951313], [-60.72407, -32.951296], [-60.724066, -32.951273], [-60.722535, -32.951231], [-60.721973, -32.951216], [-60.722016, -32.950053], [-60.720307, -32.949992], [-60.717992, -32.949927], [-60.717682, -32.949917], [-60.714859, -32.94985], [-60.712205, -32.949775], [-60.712186, -32.950245], [-60.712121, -32.951957], [-60.712007, -32.954844], [-60.711818, -32.959657], [-60.711588, -32.965425], [-60.711493, -32.96794], [-60.711425, -32.969832], [-60.711312, -32.972485], [-60.711196, -32.975892], [-60.711174, -32.97652], [-60.711088, -32.976928], [-60.710943, -32.978891], [-60.711265, -32.978957], [-60.710912, -32.982741], [-60.710586, -32.98329], [-60.710446, -32.989236], [-60.710373, -32.99241], [-60.713506, -32.992484], [-60.716404, -32.992553], [-60.723166, -32.992699], [-60.729594, -32.992851], [-60.732331, -32.992914], [-60.733038, -32.990869], [-60.734113, -32.988079], [-60.735178, -32.985377], [-60.735808, -32.9838], [-60.735911, -32.98263], [-60.73619, -32.979737], [-60.73592, -32.97882], [-60.73529, -32.976732], [-60.734661, -32.97463], [-60.734472, -32.974012], [-60.734006, -32.971611], [-60.733428, -32.968391], [-60.733079, -32.966488], [-60.733132, -32.966488], [-60.73265, -32.964299], [-60.734918, -32.964345], [-60.735183, -32.964587], [-60.739391, -32.964719], [-60.750224, -32.964973], [-60.760868, -32.965264], [-60.760952, -32.963842], [-60.761142, -32.960484], [-60.761376, -32.956158], [-60.76159, -32.95246], [-60.761666, -32.95103]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_df9d33fe5c96d56142450f24151e34c1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fc6df307cc1f2724db378aedeb16b4f1 = $(`<div id="html_fc6df307cc1f2724db378aedeb16b4f1" style="width: 100.0%; height: 100.0%;">Barrio: GODOY</div>`)[0];
+                popup_df9d33fe5c96d56142450f24151e34c1.setContent(html_fc6df307cc1f2724db378aedeb16b4f1);
+            
+        
+
+        geo_json_5606657ac90d285037109c4890497231.bindPopup(popup_df9d33fe5c96d56142450f24151e34c1)
+        ;
+
+        
+    
+    
+            geo_json_5606657ac90d285037109c4890497231.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_7d70a7457cfd1a1eab5457dc9a1cf740_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_7d70a7457cfd1a1eab5457dc9a1cf740_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7d70a7457cfd1a1eab5457dc9a1cf740 = L.geoJson(null, {
+                onEachFeature: geo_json_7d70a7457cfd1a1eab5457dc9a1cf740_onEachFeature,
+            
+                style: geo_json_7d70a7457cfd1a1eab5457dc9a1cf740_styler,
+        });
+
+        function geo_json_7d70a7457cfd1a1eab5457dc9a1cf740_add (data) {
+            geo_json_7d70a7457cfd1a1eab5457dc9a1cf740
+                .addData(data);
+        }
+            geo_json_7d70a7457cfd1a1eab5457dc9a1cf740_add({"features": [{"geometry": {"coordinates": [[[-60.784691, -32.896368], [-60.784588, -32.896085], [-60.770704, -32.895706], [-60.77047, -32.895809], [-60.768218, -32.895743], [-60.768192, -32.895987], [-60.767703, -32.895965], [-60.76112, -32.895751], [-60.760834, -32.895752], [-60.760834, -32.895803], [-60.75468, -32.895592], [-60.749548, -32.895426], [-60.745838, -32.895302], [-60.739467, -32.895098], [-60.73848, -32.895066], [-60.73845, -32.895021], [-60.734742, -32.894884], [-60.730678, -32.894742], [-60.728368, -32.894685], [-60.7255, -32.894593], [-60.722973, -32.894512], [-60.721873, -32.89448], [-60.721832, -32.894015], [-60.721541, -32.894062], [-60.721008, -32.894485], [-60.720781, -32.894662], [-60.720619, -32.894758], [-60.719656, -32.895582], [-60.716906, -32.897942], [-60.716571, -32.89823], [-60.713421, -32.900923], [-60.71328, -32.901043], [-60.712405, -32.901792], [-60.707182, -32.906248], [-60.705085, -32.908037], [-60.703547, -32.909428], [-60.699577, -32.912989], [-60.699019, -32.913407], [-60.698262, -32.913974], [-60.697702, -32.914387], [-60.697692, -32.914451], [-60.697227, -32.914855], [-60.696502, -32.91548], [-60.696347, -32.915603], [-60.695901, -32.916058], [-60.69548, -32.916558], [-60.695109, -32.917046], [-60.694757, -32.917603], [-60.694388, -32.918216], [-60.694308, -32.918412], [-60.693887, -32.91966], [-60.693755, -32.919717], [-60.693679, -32.920063], [-60.693641, -32.920329], [-60.693544, -32.921278], [-60.693514, -32.921859], [-60.693515, -32.922021], [-60.693526, -32.922341], [-60.693509, -32.922503], [-60.693476, -32.923143], [-60.693458, -32.923728], [-60.693411, -32.925525], [-60.693353, -32.927046], [-60.697438, -32.927153], [-60.702857, -32.927303], [-60.703919, -32.927338], [-60.703899, -32.927858], [-60.703828, -32.930182], [-60.704136, -32.93015], [-60.706442, -32.929887], [-60.706731, -32.92985], [-60.706728, -32.929814], [-60.707333, -32.929756], [-60.707543, -32.929739], [-60.710732, -32.929379], [-60.711081, -32.929253], [-60.711911, -32.929249], [-60.712581, -32.929258], [-60.713133, -32.929202], [-60.718106, -32.928658], [-60.721251, -32.928312], [-60.721256, -32.928214], [-60.72132, -32.928224], [-60.723386, -32.928015], [-60.72353, -32.925184], [-60.723673, -32.921066], [-60.723793, -32.918284], [-60.723902, -32.915196], [-60.723988, -32.91377], [-60.724791, -32.91379], [-60.725556, -32.913809], [-60.725631, -32.91381], [-60.725647, -32.913458], [-60.728197, -32.913518], [-60.729151, -32.913619], [-60.73024, -32.913646], [-60.737576, -32.91384], [-60.739511, -32.913829], [-60.742175, -32.913887], [-60.74773, -32.914044], [-60.749126, -32.914084], [-60.755754, -32.914414], [-60.761775, -32.914559], [-60.775294, -32.914935], [-60.782771, -32.91508], [-60.783279, -32.914514], [-60.784583, -32.91294], [-60.787054, -32.91011], [-60.787636, -32.909317], [-60.791081, -32.904731], [-60.795935, -32.898115], [-60.796934, -32.896759], [-60.796083, -32.896733], [-60.784691, -32.896368]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_b9fb8ba47f23a7c551584dd150a82dea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_802f84af0bb080d4f9f2f4273a109bf9 = $(`<div id="html_802f84af0bb080d4f9f2f4273a109bf9" style="width: 100.0%; height: 100.0%;">Barrio: LARREA Y EMPALME GRANEROS</div>`)[0];
+                popup_b9fb8ba47f23a7c551584dd150a82dea.setContent(html_802f84af0bb080d4f9f2f4273a109bf9);
+            
+        
+
+        geo_json_7d70a7457cfd1a1eab5457dc9a1cf740.bindPopup(popup_b9fb8ba47f23a7c551584dd150a82dea)
+        ;
+
+        
+    
+    
+            geo_json_7d70a7457cfd1a1eab5457dc9a1cf740.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+    
+        function geo_json_738e1bcb90f2584acb24650cd0f54ff2_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "none", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_738e1bcb90f2584acb24650cd0f54ff2_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_738e1bcb90f2584acb24650cd0f54ff2 = L.geoJson(null, {
+                onEachFeature: geo_json_738e1bcb90f2584acb24650cd0f54ff2_onEachFeature,
+            
+                style: geo_json_738e1bcb90f2584acb24650cd0f54ff2_styler,
+        });
+
+        function geo_json_738e1bcb90f2584acb24650cd0f54ff2_add (data) {
+            geo_json_738e1bcb90f2584acb24650cd0f54ff2
+                .addData(data);
+        }
+            geo_json_738e1bcb90f2584acb24650cd0f54ff2_add({"features": [{"geometry": {"coordinates": [[[-60.732331, -32.992914], [-60.729594, -32.992851], [-60.723166, -32.992699], [-60.716404, -32.992553], [-60.713506, -32.992484], [-60.710373, -32.99241], [-60.708586, -32.99237], [-60.69984, -32.992165], [-60.689435, -32.991879], [-60.689438, -32.991945], [-60.688822, -32.991931], [-60.688832, -32.992471], [-60.688982, -32.995174], [-60.689038, -32.998252], [-60.687725, -32.998212], [-60.682936, -32.998075], [-60.677657, -32.99792], [-60.674901, -32.997847], [-60.674692, -32.997896], [-60.671985, -32.997808], [-60.664231, -32.997578], [-60.66219, -32.997515], [-60.661996, -32.997508], [-60.658373, -32.997397], [-60.657822, -32.998239], [-60.656876, -32.99966], [-60.654566, -33.00316], [-60.653778, -33.004352], [-60.653166, -33.005131], [-60.653067, -33.005251], [-60.652572, -33.005993], [-60.651953, -33.006943], [-60.651322, -33.007909], [-60.651215, -33.008053], [-60.650593, -33.008884], [-60.65717, -33.009105], [-60.66469, -33.009345], [-60.664519, -33.014346], [-60.663791, -33.026236], [-60.66539, -33.026309], [-60.669368, -33.026288], [-60.671116, -33.027378], [-60.671826, -33.027357], [-60.672857, -33.027799], [-60.673568, -33.027804], [-60.674601, -33.028479], [-60.674887, -33.028513], [-60.675162, -33.028458], [-60.675937, -33.028624], [-60.677048, -33.028376], [-60.677869, -33.027746], [-60.678164, -33.027637], [-60.678377, -33.027743], [-60.678326, -33.028012], [-60.678212, -33.028288], [-60.678299, -33.028637], [-60.67848, -33.028762], [-60.679557, -33.028523], [-60.680078, -33.028664], [-60.680906, -33.02923], [-60.681831, -33.029601], [-60.682715, -33.029514], [-60.683617, -33.02985], [-60.683784, -33.030103], [-60.68392, -33.030329], [-60.684026, -33.030634], [-60.683997, -33.030905], [-60.685108, -33.031615], [-60.685583, -33.031844], [-60.685483, -33.032246], [-60.685941, -33.032602], [-60.686374, -33.032503], [-60.687125, -33.033355], [-60.688066, -33.033367], [-60.688113, -33.034145], [-60.689845, -33.034808], [-60.69039, -33.034794], [-60.694624, -33.03737], [-60.698189, -33.039345], [-60.698553, -33.038859], [-60.698808, -33.038515], [-60.70164, -33.034713], [-60.701849, -33.034419], [-60.703074, -33.032664], [-60.703977, -33.031361], [-60.705961, -33.028501], [-60.707279, -33.026601], [-60.707393, -33.026604], [-60.708119, -33.025827], [-60.708946, -33.02491], [-60.709996, -33.024552], [-60.710803, -33.024269], [-60.711122, -33.023904], [-60.71288, -33.021954], [-60.712899, -33.021874], [-60.713389, -33.021324], [-60.715494, -33.018909], [-60.715685, -33.018625], [-60.715942, -33.018089], [-60.716617, -33.016671], [-60.717103, -33.015647], [-60.717172, -33.015642], [-60.717541, -33.014855], [-60.718144, -33.013608], [-60.718896, -33.012014], [-60.719444, -33.010872], [-60.719649, -33.010461], [-60.721024, -33.007622], [-60.726772, -33.007768], [-60.72718, -33.006692], [-60.728913, -33.002181], [-60.729867, -32.999687], [-60.730773, -32.997204], [-60.731865, -32.994255], [-60.732331, -32.992914]]], "type": "Polygon"}, "id": "0", "properties": "", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_807d7f8e09d830cd54c0896ed8511192 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f3a2da76add1cab6e1098de4c73d8ce8 = $(`<div id="html_f3a2da76add1cab6e1098de4c73d8ce8" style="width: 100.0%; height: 100.0%;">Barrio: MERCEDES DE SAN MARTIN</div>`)[0];
+                popup_807d7f8e09d830cd54c0896ed8511192.setContent(html_f3a2da76add1cab6e1098de4c73d8ce8);
+            
+        
+
+        geo_json_738e1bcb90f2584acb24650cd0f54ff2.bindPopup(popup_807d7f8e09d830cd54c0896ed8511192)
+        ;
+
+        
+    
+    
+            geo_json_738e1bcb90f2584acb24650cd0f54ff2.addTo(map_669461fa187cc04dc5cb13d3480c4942);
+        
+</script>
+</html>
