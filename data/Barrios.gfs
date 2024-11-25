@@ -1,0 +1,35 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>barrios</Name>
+    <ElementPath>barrios</ElementPath>
+    <GeometryName>the_geom</GeometryName>
+    <GeometryElementPath>the_geom</GeometryElementPath>
+    <!--POLYGON-->
+    <GeometryType>3</GeometryType>
+    <SRSName>EPSG:4326</SRSName>
+    <DatasetSpecificInfo>
+      <FeatureCount>53</FeatureCount>
+      <ExtentXMin>-60.79693</ExtentXMin>
+      <ExtentXMax>-60.61278</ExtentXMax>
+      <ExtentYMin>-33.03934</ExtentYMin>
+      <ExtentYMax>-32.86941</ExtentYMax>
+    </DatasetSpecificInfo>
+    <PropertyDefn>
+      <Name>MSLINK</Name>
+      <ElementPath>MSLINK</ElementPath>
+      <Type>Integer</Type>
+    </PropertyDefn>
+    <PropertyDefn>
+      <Name>BARRIO</Name>
+      <ElementPath>BARRIO</ElementPath>
+      <Type>String</Type>
+      <Width>27</Width>
+    </PropertyDefn>
+    <PropertyDefn>
+      <Name>OBSERVACIO</Name>
+      <ElementPath>OBSERVACIO</ElementPath>
+      <Type>String</Type>
+      <Width>11</Width>
+    </PropertyDefn>
+  </GMLFeatureClass>
+</GMLFeatureClassList>

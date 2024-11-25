@@ -1,0 +1,30 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>distritos_descentralizados</Name>
+    <ElementPath>distritos_descentralizados</ElementPath>
+    <GeometryName>the_geom</GeometryName>
+    <GeometryElementPath>the_geom</GeometryElementPath>
+    <!--POLYGON-->
+    <GeometryType>3</GeometryType>
+    <SRSName>EPSG:4326</SRSName>
+    <DatasetSpecificInfo>
+      <FeatureCount>6</FeatureCount>
+      <ExtentXMin>-60.79710</ExtentXMin>
+      <ExtentXMax>-60.61183</ExtentXMax>
+      <ExtentYMin>-33.03897</ExtentYMin>
+      <ExtentYMax>-32.86925</ExtentYMax>
+    </DatasetSpecificInfo>
+    <PropertyDefn>
+      <Name>DISTRITO</Name>
+      <ElementPath>DISTRITO</ElementPath>
+      <Type>String</Type>
+      <Width>8</Width>
+    </PropertyDefn>
+    <PropertyDefn>
+      <Name>OBSERVACIO</Name>
+      <ElementPath>OBSERVACIO</ElementPath>
+      <Type>String</Type>
+      <Width>25</Width>
+    </PropertyDefn>
+  </GMLFeatureClass>
+</GMLFeatureClassList>
