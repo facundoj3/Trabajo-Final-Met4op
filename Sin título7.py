@@ -128,3 +128,12 @@ for edad_cat, edad_nombre in edades_categorias.items():
 
 # 3. Gráfico de barras apiladas por intención y edad
 plot_barras_apiladas_por_edad(data, categorias_edad)
+
+#grafico torta nuevo intencion de voto femenino
+# Filtrar datos para género femenino
+data_femenino = data[data['genero'] == 'Femenino']
+
+# Gráfico de torta para intención de voto femenino por espacio
+plot_pie_chart(data_femenino, 'intencion', 'Intención de voto femenino por espacio', categorias['intencion'])
+
+
